@@ -1,6 +1,6 @@
-class CreateSituations < ActiveRecord::Migration
+class CreateOutcomes < ActiveRecord::Migration
   def change
-    create_table :situations do |t|
+    create_table :outcomes do |t|
       t.string  :name
 
       t.timestamps null: false
