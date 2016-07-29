@@ -12,6 +12,7 @@ Choose your favorite disaster:
   -oubreak
 (Sets background and language.)
 
+OUTCOME1 - TEXT
 -Two weeks ago, (disaster) has wiped out nearly all humans on earth. The few remaining pockets of survivors near us have clustered into a handful of groups, with different skills and culture. None of the groups will likely survive long without cooperation from one or more other groups.
 
 Our task is to unite and save humanity. Why us? xxx
@@ -29,20 +30,26 @@ Here's what we know about the clusters of surviving humans -
   Oh, one last thing. We have a sidekick--Spiffy, the penguin. We'll be able to have more dynamic interactions with three people.
 
 Now, for our first decision: Shall we make a plan, or start by visiting the group closest to us?
+END OF OUTCOME1 TEXT
 
-1PLAN:
+CHOICE1-PLAN:
+  TEXT:
   Great choice! It's important to have a plan, but the clock is ticking so let's be sure we don't spend all of our time planning, leaving no time to put the plan into action.
 
   Let's decide how to prioritize, then head out.
 
   How should we prioritize which groups to visit first? Easiest to persuade, or most difficult - get a sense of what they need to be persuaded (most knowledge)
+  END
 
-EASIEST:
+CHOICE2-EASIEST:
+  TEXT
   I would have started with the most difficult group, because when solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
 
   But, there are good reasons to get a good ally on our side early on (deliverable), and since we're working together, both of our ideas are important.
+  END
 
-  GO TO SHELTER.
+OUTCOME4:
+  GO TO SHELTER GROUP.
 
 <!-- MV RESOURCE:
   I would have started with the most difficult group, because when solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
@@ -51,33 +58,43 @@ EASIEST:
 
   GO TO FOOD. -->
 
-MOST DIFFICULT:
+CHOICE4-MOST DIFFICULT:
+  TEXT
   This is what I would have chosen, too. When solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
 
   GO TO DEFENSE/OFFENSE.
+  END
 
 
-1CLOSEST GROUP:
+CHOICE2-CLOSEST GROUP:
+  TEXT
   You know, I probably would have spent some time planning, but I appreciate your desire to get started. I think it is important to plan and make informed decisions, but sometimes it is too easy to spend too much time making the plan, and not enough executing it. We'll need to talk to everyone, so let's go!
+  END
 
-  GO TO DEFENSE/OFFENSE.
+  OUTCOME3-GO TO DEFENSE/OFFENSE.
 
   ---------------
 
-  2DEFENSE/OFFENSE:
+  OUTCOME3-DEFENSE/OFFENSE:
+  TEXT:
   We visit the group that has a good system for protecting themselves from (disaster). They have decent shelter, and a moderate food supply. They recognize that both of these needs could be better met since they have been focusing on stopping the spread of (disaster).
 
   This is a tough group becasue xxx. They are pretty ego-tystical and think they are better than the other groups.
 
   Should we tell them how great they are, or tell them they are wrong?
+  END
 
-  GREAT:
+  CHOICE5-THEY ARE GREAT:
+  TEXT
   Like so many of us, this group responds really well to positive reinforcement. And, they really have done exceptional work crafting a means of stopping the spread of (disaster). Making the temperamental members of this group feel good about themselves let them feel more comfortable admitting they need xx from the others.
 
   Success!
+  END
 
-  WRONG:
+  CHOICE6-THEY ARE WRONG:
+  TEXT
   Whoa. Well, that made them mad. Now, they are demanding that we leave. Should we go, or apologize?
+  END
 
   GO:  Fortunately, the group members took our retreat as a show of respect and have agreed to cooperate and share what their knowledge with the others.
 
