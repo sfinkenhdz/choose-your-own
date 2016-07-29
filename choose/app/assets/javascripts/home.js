@@ -3,7 +3,10 @@ $(document).ready(function(){
     event.preventDefault();
     $('.main-container').css('background-image', 'url(/assets/fire_river.jpg)');
     $('.adventure').slideToggle();
+    $('.resume').slideToggle();
   });
+
+
 });
 
 
