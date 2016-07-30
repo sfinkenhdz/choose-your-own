@@ -11,6 +11,6 @@
 
 <div>
   <% @choice.resulting_outcome.next_choices.each do |choice| %>
-    <button><%= choice.name %></button>
+    <button class="choice"><%= link_to choice.name, choice_path(choice) %></button>
     <% end %>
 </div>
