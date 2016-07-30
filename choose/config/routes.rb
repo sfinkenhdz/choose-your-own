@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+    resources :outcomes, :only => [:show] do
+      resources :post_choices, :only => [:show, :index]
+    end
+
+    resources :choices, :only => [:show, :index]
+
+#   resources :articles do
+#   resources :comments, only: [:index, :new, :create]
+# end
+# resources :comments, only: [:show, :edit, :update, :destroy]
 
   root 'application#home'
 

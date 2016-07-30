@@ -18,29 +18,31 @@ ActiveRecord::Schema.define(version: 20160726221116) do
 
   create_table "choices", force: :cascade do |t|
     t.string   "name"
-    t.text     "resulting_text"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
-  create_table "outcomes", force: :cascade do |t|
-    t.string   "name"
+    t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "post_choices", force: :cascade do |t|
-    t.integer  "situation_id"
+  create_table "next_options", force: :cascade do |t|
+    t.integer  "outcome_id"
     t.integer  "choice_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "outcomes", force: :cascade do |t|
+    t.string   "name"
+    t.text     "text"
+    t.integer  "causing_choice_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "pre_choices", force: :cascade do |t|
-    t.integer  "situation_id"
+    t.integer  "outcome_id"
     t.integer  "choice_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
