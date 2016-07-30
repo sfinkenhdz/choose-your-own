@@ -12,8 +12,10 @@
 <div class="outcome hidden">
   <%= @outcomes[0].text %>
 
-<% @outcomes[0].next_choices.each do |choice| %>
-  <div> <%= choice.name %> </div>
-<% end %>
+  <div>
+    <% @outcomes[0].next_choices.each do |choice| %>
+      <button> <%= choice.name %> </button>
+    <% end %>
+  </div>
 
 </div>
