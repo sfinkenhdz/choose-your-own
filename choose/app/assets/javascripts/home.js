@@ -7,6 +7,10 @@ $(document).ready(function(){
     $('div:hidden').show();
   });
 
+  $('.choice').on('click', function(event){
+      // $(this)
+  })
+
 
 });
 

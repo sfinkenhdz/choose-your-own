@@ -11,11 +11,13 @@
 
 <div class="outcome hidden">
   <%= @outcomes[0].text %>
-
   <div>
     <% @outcomes[0].next_choices.each do |choice| %>
-      <button> <%= choice.name %> </button>
+      <button class="choice"> <%= link_to choice.name,choice_path(choice) %> </button>
     <% end %>
   </div>
-
 </div>
+
+
+
+

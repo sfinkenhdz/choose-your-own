@@ -1,0 +1,16 @@
+
+<div>
+<%= @choice.text %>
+</div>
+
+<div>
+<%= @choice.resulting_outcome.name %>
+
+<%= @choice.resulting_outcome.text %>
+</div>
+
+<div>
+  <% @choice.resulting_outcome.next_choices.each do |choice| %>
+    <button><%= choice.name %></button>
+    <% end %>
+</div>

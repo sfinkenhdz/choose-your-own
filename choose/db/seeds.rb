@@ -8,8 +8,8 @@
 
 outcomes = Outcome.create([{ name: 'Setup', text: 'Two weeks ago...' }, { name: 'Choose: easy/hard', causing_choice_id: 1 },{ name: 'Go to defense group', text: 'We visit...' },{ name: 'Go to shelter group' },{ name: 'Choose: leave/apologize' },{ name: 'Go to food group' },{ name: 'Choose: cooperate' },{ name: 'TBD' },])
 
-choice1 = Choice.create(name: 'Plan', text: 'Great choice!')
-choice2 = Choice.create(name: 'Closest', text: 'You know...')
+choice1 = Choice.create(name: 'Plan', text: 'Great choice!', resulting_outcome_id: 2 )
+choice2 = Choice.create(name: 'Closest', text: 'You know...', resulting_outcome_id: 3)
 choice3 = Choice.create(name: 'Easiest', text: 'I would have...')
 choice4 = Choice.create(name: 'Hardest', text: 'This is what...')
 choice5 = Choice.create(name: 'They are great!', text: "Like...")
@@ -20,7 +20,7 @@ choice9 = Choice.create()
 choice10 = Choice.create()
 choice11 = Choice.create()
 
-#causes
+#causes - might not need this
 # this top one isn't real
 PreChoice.create(choice_id: 10, outcome_id: 2)
 PreChoice.create(choice_id: 1, outcome_id: 1)
