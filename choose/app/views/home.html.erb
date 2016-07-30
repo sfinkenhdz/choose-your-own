@@ -1,4 +1,5 @@
 <div class="main-container"></div>
+
 <div>Welcome to Sarah Finken-Hernandez's Site </div>
 
 <div>I'm guessing you're here because you'd like to learn more about me. There are lots of ways to do that. Would you like to look at my resume, or go on an adventure? </div>
@@ -8,6 +9,11 @@
   <button class="adventure">ADVENTURE</button>
 </div>
 
-<div class="outcome">
-  <%=
+<div class="outcome hidden">
+  <%= @outcomes[0].text %>
+
+<% @outcomes[0].next_choices.each do |choice| %>
+  <div> <%= choice.name %> </div>
+<% end %>
+
 </div>

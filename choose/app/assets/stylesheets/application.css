@@ -20,8 +20,8 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: Helvetica;
-/*  color: white;
-*/}
+  /*color: white;*/
+}
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -41,15 +41,3 @@ html {
     opacity: 0.7;
     z-index: -1;
 
-
-.resume {
-  display: inline-block;
-  width: 30%;
-  background-color: red;
-}
-
-.adventure {
-  display: inline-block;
-  width: 30%;
-  background-color: red;
-}
