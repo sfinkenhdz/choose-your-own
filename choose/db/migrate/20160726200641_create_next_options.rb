@@ -1,6 +1,6 @@
-class CreatePreChoices < ActiveRecord::Migration
+class CreateNextOptions < ActiveRecord::Migration
   def change
-    create_table :pre_choices do |t|
+    create_table :next_options do |t|
       t.integer :outcome_id
       t.integer :choice_id
 

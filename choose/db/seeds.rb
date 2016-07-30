@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-outcomes = Outcome.create([{ name: 'Setup', text: 'Two weeks ago...' }, { name: 'Choose: easy/hard' },{ name: 'Go to defense group', text: 'We visit...' },{ name: 'Go to shelter group' },{ name: 'Choose: leave/apologize' },{ name: 'Go to food group' },{ name: 'Choose: cooperate' },{ name: 'TBD' },])
+outcomes = Outcome.create([{ name: 'Setup', text: 'Two weeks ago...' }, { name: 'Choose: easy/hard', causing_choice_id: 1 },{ name: 'Go to defense group', text: 'We visit...' },{ name: 'Go to shelter group' },{ name: 'Choose: leave/apologize' },{ name: 'Go to food group' },{ name: 'Choose: cooperate' },{ name: 'TBD' },])
 
 choice1 = Choice.create(name: 'Plan', text: 'Great choice!')
 choice2 = Choice.create(name: 'Closest', text: 'You know...')
@@ -19,4 +19,21 @@ choice8 = Choice.create()
 choice9 = Choice.create()
 choice10 = Choice.create()
 choice11 = Choice.create()
+
+#causes
+# this top one isn't real
+PreChoice.create(choice_id: 10, outcome_id: 2)
+PreChoice.create(choice_id: 1, outcome_id: 1)
+
+
+#next_options
+NextOption.create(outcome_id: 1, choice_id: 1)
+NextOption.create(outcome_id: 1, choice_id: 2)
+NextOption.create(outcome_id: 2, choice_id: 3)
+NextOption.create(outcome_id: 2, choice_id: 4)
+
+
+
+
+#Possibility and Result ?
 
