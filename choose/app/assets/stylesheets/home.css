@@ -1,0 +1,22 @@
+.resume {
+  display: inline-block;
+  width: 30%;
+}
+
+.adventure {
+  display: inline-block;
+  width: 30%;
+}
+
+
+.outcome {
+  display: inline-block;
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+  background-color: blue;
+}
+
+

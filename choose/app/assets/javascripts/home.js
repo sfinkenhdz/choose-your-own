@@ -4,7 +4,24 @@ $(document).ready(function(){
     $('.main-container').css('background-image', 'url(/assets/fire_river.jpg)');
     $('.adventure').slideToggle();
     $('.resume').slideToggle();
+    $('div:hidden').show();
   });
+
+  $('.outcome').on('click', '.button_to', function(event){
+    console.log("hi");
+      event.preventDefault();
+      var url = $(this).attr("action");
+      var method = $(this).attr("method");
+      $.ajax({
+        method: method,
+        url: url
+      })
+     .done(function(response){
+      $('div:hidden').show();
+      $(".outcome").html(response);
+     })
+
+   });
 
 
 });

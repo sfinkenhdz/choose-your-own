@@ -3,6 +3,7 @@ class CreateChoices < ActiveRecord::Migration
     create_table :choices do |t|
       t.string  :name
       t.text    :text
+      t.integer :resulting_outcome_id
 
       t.timestamps null: false
     end
