@@ -38,10 +38,11 @@ CHOICE1-PLAN:
 
   Let's decide how to prioritize, then head out.
 
+OUTCOME 2: CHOOSE Easy/Hard
   How should we prioritize which groups to visit first? Easiest to persuade, or most difficult - get a sense of what they need to be persuaded (most knowledge)
   END
 
-CHOICE2-EASIEST:
+CHOICE3-EASIEST:
   TEXT
   I would have started with the most difficult group, because when solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
 
@@ -50,6 +51,7 @@ CHOICE2-EASIEST:
 
 OUTCOME4:
   GO TO SHELTER GROUP.
+  (Text = below.)
 
 <!-- MV RESOURCE:
   I would have started with the most difficult group, because when solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
@@ -93,32 +95,51 @@ CHOICE2-CLOSEST GROUP:
 
   CHOICE6-THEY ARE WRONG:
   TEXT
-  Whoa. Well, that made them mad. Now, they are demanding that we leave. Should we go, or apologize?
+  Whoa. Well, that made them mad. Now, they are demanding that we leave.
+
+  OUTCOME 5: CHOOSE LEAVE/APOLOGIZE
+  Should we go, or apologize?
   END
 
   GO:  Fortunately, the group members took our retreat as a show of respect and have agreed to cooperate and share what their knowledge with the others.
 
-    FOOD: Based on (decision), next we go to the group that has mastered the food system.
+    FOOD: Now that we have succeeded with this group, on to the next! Based on (decision), next we go to the group that has mastered the food system.
 
   APOLOGIZE: Fortunately, the group members accept our apology. It takes a big person to admit that they are wrong! They now respect us and have agreed to cooperate.
 
-    FOOD: Based on (decision), next we go to the group that has mastered the food system.
+    FOOD: Now that we have succeeded with this group, on to the next! Based on (decision), next we go to the group that has mastered the food system.
 
+    On our way to this group, we pass
 
-  2SHELTER: We have arrived at a patchwork of makeshift homes. (description of some -- vague reference to one that looks like a TARDIS) All provide basic protection from the elements and at least some barrier to fend off attacking creatues. However, a lack of long-term planning is evident. The dwellings built first are far superior and some have redundant features using materials that would have been better saved for homes built later on.
+    Should we stop to help?
+
+    CHOICE11: YES
+    Well, you know what I always say. "Be helpful."
+    "Oh really," you respond. "That's what you always say?"
+    "Yep. Always. It's something of a credo of mine, if you know what I mean."
+
+    CHOICE12: NO
+    Well, you know what I always say. "Be helpful."
+    "Oh really," you respond. "That's what you always say?"
+    "Yep. Always. It's something of a credo of mine, if you know what I mean."
+
+  OUTCOME4, SHELTER: We have arrived at a patchwork of makeshift homes. (description of some -- vague reference to one that looks like a TARDIS) All provide basic protection from the elements and at least some barrier to fend off attacking creatues. However, a lack of long-term planning is evident. The dwellings built first are far superior and some have redundant features using materials that would have been better saved for homes built later on.
 
   We know that this is inclined to cooperate with others, and are further motivated by the knowledge that their food supply will run out soon. So, we have a pretty easy decision to make.  Should we invite them to cooperate in the great building of humanity, or should we throw rocks at them?
 
-  INVITE TO COOPERATE: Great choice! Not surprisingly, this hungry, collaborative group is more than happy to join our efforts to rebuild humanity.
+  CHOICE 10: INVITE TO COOPERATE: Great choice!
 
-  THROW ROCKS: Seriously?
-    INVITE TO COOPERATE: Great choice! Not surprisingly, this hungry, collaborative group is more than happy to join our efforts to rebuild humanity.
+  CHOICE 9:
+  THROW ROCKS: no text
 
-    [On our way to our next destination a child from the group
-    (something happens -- should we help?)
-    Well, you know what I always say. "Be helpful."
-    "Oh really," you respond. "That's what you always say?"
-    "Yep. Always."]
+  OUTCOME 9: STUPID CHOICE
+  Seriously?
+  CHOICE 10: INVITE TO COOPERATE: Great choice!
+
+    OUTCOME 8: SUCCESS WITH SHELTER
+    Not surprisingly, this hungry, collaborative group is more than happy to join our efforts to rebuild humanity.
+
+
 
 ---------------
 
