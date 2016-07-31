@@ -7,12 +7,11 @@ $(document).ready(function(){
     $('div:hidden').show();
   });
 
-  $('.button_to').on('click', function(event){
+  $('.outcome').on('click', '.button_to', function(event){
+    console.log("hi");
       event.preventDefault();
       var url = $(this).attr("action");
       var method = $(this).attr("method");
-      console.log(url);
-      console.log(method);
       $.ajax({
         method: method,
         url: url
@@ -20,17 +19,9 @@ $(document).ready(function(){
      .done(function(response){
       $('div:hidden').show();
       $(".outcome").html(response);
-      // $(".next").html(response);
      })
 
-
-      // $(".next").text("hi");
-
    });
-
-// choices/1
-
-// <a href="/choices/1">First Sample Article</a>
 
 
 });
