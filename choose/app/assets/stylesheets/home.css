@@ -8,13 +8,26 @@
   width: 30%;
 }
 
-
 .outcome {
+  display: inline-block;
+  margin: auto;
+  width: 50%;
+  height: 120px;
+  left: 50%;
+  top: 80%;
+  background-color: #8d9298;
+  border: 2px solid black;
+}
+
+.button_to {
   display: inline-block;
 }
 
 .hidden {
   display: none;
+  background-color: red;
 }
+
+
 
 

@@ -2,13 +2,13 @@ $(document).ready(function(){
   $('.adventure').on('click', function(event){
     event.preventDefault();
     $('.main-container').css('background-image', 'url(/assets/invasion.jpg)');
-    $('.adventure').slideToggle();
-    $('.resume').slideToggle();
+    // $('.adventure').slideToggle();
+    // $('.resume').slideToggle();
     $('div:hidden').show();
+    $('.header').slideToggle("slow");
   });
 
   $('.outcome').on('click', '.button_to', function(event){
-    console.log("hi");
       event.preventDefault();
       var url = $(this).attr("action");
       var method = $(this).attr("method");
