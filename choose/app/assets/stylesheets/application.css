@@ -31,6 +31,7 @@ html {
 
 .main-container {
     background-image: url('brain2.jpg');
+    opacity: .7;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
