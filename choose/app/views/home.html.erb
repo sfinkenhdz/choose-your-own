@@ -13,10 +13,13 @@
   <%= @outcomes[0].text %>
   <div>
     <% @outcomes[0].next_choices.each do |choice| %>
-      <button class="choice"> <%= link_to choice.name,choice_path(choice) %> </button>
+      <%= button_to choice.name, choice, remote: true, method: :get, class: "choice" %>
     <% end %>
   </div>
 </div>
+
+<!-- <div class="next hidden"></div>
+ -->
 
 
 

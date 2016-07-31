@@ -3,14 +3,12 @@
 <%= @choice.text %>
 </div>
 
-<div>
-<%= @choice.resulting_outcome.name %>
-
+<div class="outcome hidden">
 <%= @choice.resulting_outcome.text %>
 </div>
 
 <div>
   <% @choice.resulting_outcome.next_choices.each do |choice| %>
-    <button class="choice"><%= link_to choice.name, choice_path(choice) %></button>
+      <%= button_to choice.name, choice, remote: true, method: :get, class: "choice" %>
     <% end %>
 </div>

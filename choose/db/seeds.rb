@@ -20,11 +20,6 @@ choice9 = Choice.create()
 choice10 = Choice.create()
 choice11 = Choice.create()
 
-#causes - might not need this
-# this top one isn't real
-PreChoice.create(choice_id: 10, outcome_id: 2)
-PreChoice.create(choice_id: 1, outcome_id: 1)
-
 
 #next_options
 NextOption.create(outcome_id: 1, choice_id: 1)
@@ -35,7 +30,6 @@ NextOption.create(outcome_id: 3, choice_id: 5)
 NextOption.create(outcome_id: 3, choice_id: 6)
 NextOption.create(outcome_id: 4, choice_id: 9)
 NextOption.create(outcome_id: 4, choice_id: 10)
-
 NextOption.create(outcome_id: 5, choice_id: 7)
 NextOption.create(outcome_id: 5, choice_id: 8)
 

@@ -7,9 +7,30 @@ $(document).ready(function(){
     $('div:hidden').show();
   });
 
-  $('.choice').on('click', function(event){
-      // $(this)
-  })
+  $('.button_to').on('click', function(event){
+      event.preventDefault();
+      var url = $(this).attr("action");
+      var method = $(this).attr("method");
+      console.log(url);
+      console.log(method);
+      $.ajax({
+        method: method,
+        url: url
+      })
+     .done(function(response){
+      $('div:hidden').show();
+      $(".outcome").html(response);
+      // $(".next").html(response);
+     })
+
+
+      // $(".next").text("hi");
+
+   });
+
+// choices/1
+
+// <a href="/choices/1">First Sample Article</a>
 
 
 });
