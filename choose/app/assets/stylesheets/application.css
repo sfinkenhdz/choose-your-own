@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require home
  */
 
 
@@ -19,8 +20,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Helvetica;
-  /*color: white;*/
+  font-family: Courier;
 }
 
 *, *:before, *:after {
@@ -31,7 +31,7 @@ html {
 
 .main-container {
     background-image: url('brain2.jpg');
-    opacity: .7;
+    opacity: .9;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -40,4 +40,6 @@ html {
     bottom: 0px;
     width: 100%;
     z-index: -1;
+}
+
 

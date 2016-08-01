@@ -1,11 +1,11 @@
 $(document).ready(function(){
   $('.adventure').on('click', function(event){
     event.preventDefault();
-    $('.main-container').css('background-image', 'url(/assets/invasion.jpg)');
+    $('.main-container').css('background-image', 'url(/assets/treeline.jpg)');
     // $('.adventure').slideToggle();
     // $('.resume').slideToggle();
-    $('div:hidden').show();
-    $('.header').slideToggle("slow");
+    $('div:hidden').removeClass('hidden');
+    $('.header').slideToggle('slow');
   });
 
   $('.outcome').on('click', '.button_to', function(event){
@@ -17,7 +17,6 @@ $(document).ready(function(){
         url: url
       })
      .done(function(response){
-      $('div:hidden').show();
       $(".outcome").html(response);
      })
 

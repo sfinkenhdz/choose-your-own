@@ -1,4 +1,3 @@
-<div class="outcome">
   <div>
   <%= @choice.text %>
   </div>
@@ -9,7 +8,6 @@
 
   <div>
     <% @choice.resulting_outcome.next_choices.each do |choice| %>
-        <%= button_to choice.name, choice, remote: true, method: :get, class: "choice" %>
+        <%= button_to choice.name.upcase, choice, remote: true, method: :get, class: "choice" %>
       <% end %>
   </div>
-</div>

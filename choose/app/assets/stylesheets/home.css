@@ -1,31 +1,48 @@
 .resume {
   display: inline-block;
-  width: 30%;
 }
 
 .adventure {
   display: inline-block;
-  width: 30%;
 }
 
 .outcome {
-  display: inline-block;
-  margin: auto;
   width: 50%;
   height: 120px;
+  position: absolute;
   left: 50%;
-  top: 80%;
-  background-color: #8d9298;
-  border: 2px solid black;
+  top: 30%;
+/*  background-color: #204060;
+*/
+  background-color: #333333;
+  opacity: .8;
+  transform: translate(-50%,-50%);
+  border: 3px solid white;
+  padding: 3px;
+  color: white;
+  font-size: 20px;
 }
 
 .button_to {
   display: inline-block;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.choice {
+  background-color: #4d4d4d;
+  border: 1px solid black;
+  color: white;
+  border-radius: 25px;
 }
 
 .hidden {
   display: none;
   background-color: red;
+}
+
+.header {
+  font: Helvetica;
 }
 
 
