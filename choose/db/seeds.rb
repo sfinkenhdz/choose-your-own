@@ -42,5 +42,11 @@ NextOption.create(outcome_id: 5, choice_id: 8)
 NextOption.create(outcome_id: 9, choice_id: 10)
 
 
+PreChoice.create(outcome_id: 3, choice_id: 2)
+PreChoice.create(outcome_id: 3, choice_id: 4)
+PreChoice.create(outcome_id: 3, choice_id: 20)
+
+
+
 #Possibility and Result ?
 

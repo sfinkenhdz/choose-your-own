@@ -3,6 +3,7 @@ class ChoicesController < ActionController::Base
   def show
     # Article.includes(:category, :comments)
     @choice = Choice.find(params[:id])
+    # @choice.previous_outcome.visited? == 1
     @result = @choice.set_result
 
     respond_to do |format|

@@ -1,6 +1,7 @@
 class Choice < ActiveRecord::Base
   has_many :pre_choices
-  has_many :previous_outcomes, through: :pre_choices, source: :outcome
+  # has_many :previous_outcomes, through: :pre_choices, source: :outcome
+  has_one :previous_outcome, class_name: "Outcome"
   belongs_to :resulting_outcome, class_name: "Outcome"
 
   def set_result
