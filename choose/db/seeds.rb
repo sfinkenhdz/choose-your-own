@@ -18,10 +18,10 @@ choice7 = Choice.create(name: 'Go', text: "Fortunately, they take this as apolog
 choice8 = Choice.create(name: 'Apologize', text: "Fortunately, they accept", resulting_outcome_id: 4, alt_resulting_outcome_id: 6)
 choice9 = Choice.create(name: 'Rocks', text: "Seriously?", resulting_outcome_id: 9)
 choice10 = Choice.create(name: 'Cooperate', text: "Great choice!", resulting_outcome_id: 8 )
-choice11 = Choice.create(name: 'Yes', "Well, I always say...")
-choice12 = Choice.create(name: 'No', "Hmmmm.")
+choice11 = Choice.create(name: 'Yes', text: "Well, I always say...")
+choice12 = Choice.create(name: 'No', text: "Hmmmm.")
 choice13 = Choice.create(name: 'Trust Falls' , text: "Why not?" )
-choice14 = Choice.create(name: 'Manual Labor' , text: )
+choice14 = Choice.create(name: 'Manual Labor' , text: '')
 choice15 = Choice.create(name: 'Go to lazy group', text: '')
 
 choice20 = Choice.create(name: "After 8", resulting_outcome_id: 3, alt_resulting_outcome_id: 6)
