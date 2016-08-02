@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160726221116) do
     t.text     "text"
     t.integer  "resulting_outcome_id"
     t.integer  "alt_resulting_outcome_id"
+    t.integer  "previous_outcome_id"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
