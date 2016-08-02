@@ -1,5 +1,7 @@
 class OutcomesController < ActionController::Base
 
+
+
  # put "/posts/:id/like" do
  #    @post = Post.find(params[:id])
  #    @post.increment!(:likes_count)
