@@ -21,11 +21,11 @@ Our task is to unite and save humanity. Why us? xxx
 
 Here's what we know about the clusters of surviving humans -
   -The first group has decided to tackle to (disaster) head on. They are analytical and have created a system for tracking the spread of (disaster), its impact, weaknesses and they are working on developing a defense. They are having success, but it also sounds like there is a lot of competition and in-fighting within the group.
-  -The second group is thinking about both the impact of the disaster, but also other threats. They have been focusing on shelter to protect themselves from (disaster), weather, possible predators returning to the crumbling city, and hey, why not have a little comfort? They are very creative, and have created a wide variety of shelter out of anything they can find. It works, but quality varies greatly.
+  -The second group is thinking about the impact of the disaster, but also other threats. They have been focusing on shelter to protect themselves from (disaster), weather, possible predators returning to the crumbling city, and hey, why not have a little comfort? They are very creative, and have created a wide variety of shelter out of anything they can find. It works, but quality varies greatly.
   (Food from buildings-will run out soon and they realize this.)
   -The third group appears to be doing, not much of anything. They are camped out by a river and don't seem to have much of a plan. The land near the river grows various berry bushes and other edible plants. The group seems to be doing all right for now, and don't seem too interested in a longer-term plan or working harder.
   (cave)
-  -The fourth group has food figured out. (They have divided into groups.) They scavenged food from the wreckage, but rather than eating all of it directly, they have been using it primarily as bait to lure various types of small game. (Who knew that rabbits prefer x, while t prefer y.) They have also explored a much larger area than the other groups and have found various clusters of other edibles that can be foraged. They of course have a large fire that is always tended. Just because humans are on the verge of extinction doesn't mean we have to eat raw meat. This has helped keep predators at bay, but the bait strategy is attracting more and more unwanted guests. They're cautious, but welcomeing.
+  -The fourth group has food figured out. (They have divided into groups.) They scavenged food from the wreckage, but rather than eating all of it directly, they have been using it primarily as bait to lure various types of small game. (Who knew that rabbits prefer x, while t prefer y.) They have also explored a much larger area than the other groups and have found various clusters of other edibles that can be foraged. They of course have a large fire that is always tended. Just because humans are on the verge of extinction doesn't mean we can't have a hot meal. This has helped keep predators at bay, but the bait strategy is attracting more and more unwanted guests. They're cautious, but welcomeing.
 
   Oh, one last thing. We have a sidekick--Spiffy, the penguin. We'll be able to have more dynamic interactions with three people.
 
@@ -109,21 +109,50 @@ CHOICE2-CLOSEST GROUP:
 
     FOOD: Now that we have succeeded with this group, on to the next! Based on (decision), next we go to the group that has mastered the food system.
 
-    On our way to this group, we pass
+    As we near this group, we pass a child gathering firewood to bring back. Should we take the time to stop to help?
 
-    Should we stop to help?
 
     CHOICE11: YES
     Well, you know what I always say. "Be helpful."
     "Oh really," you respond. "That's what you always say?"
     "Yep. Always. It's something of a credo of mine, if you know what I mean."
 
+    We all gather armloads of firewood, from small twigs for kindling to larger logs.
+
+    When we arrive, the group leaders are impressed by our helpfulness.
+
+    This group is very organized, detail-oriented and good at developing systems, so they also appreciate that we thought to consider the variety of wood that would be needed.
+
+    OUTCOME10: Gain trust
+    This small choice helps us gain trust immediately.
+
     CHOICE12: NO
-    Well, you know what I always say. "Be helpful."
-    "Oh really," you respond. "That's what you always say?"
-    "Yep. Always. It's something of a credo of mine, if you know what I mean."
+    "Hmmmm, I think it's usually a good idea to be helpful and pitch in whenever possible, but let's see what happens," I say.
+
+    "I think 'Be helpful' is a pretty good credo, if you know what I mean."
+
+    OUTCOME11: Skepticism
+    Group leaders are a little skeptical that we have come to them asking for cooperation after having just decided to not help with a simple task.
+
+    We are going to have to gain their trust.
+
+    CHOICE13: Trust Falls
+    Why not?
+
+    CHOICE14: Manual Labor
+
+    OUTCOME11: Gain trust of food group
+    For whatever reason, this act has been enough to gain the trust of the group. They now feel that you have proven your worth and sincerity. They agree to cooperate.
+
+    Now, we will travel to our final group.
+
+    CHOICE15: Go to lazy group
+    (text below)
+
 
   OUTCOME4, SHELTER: We have arrived at a patchwork of makeshift homes. (description of some -- vague reference to one that looks like a TARDIS) All provide basic protection from the elements and at least some barrier to fend off attacking creatues. However, a lack of long-term planning is evident. The dwellings built first are far superior and some have redundant features using materials that would have been better saved for homes built later on.
+
+  (impressed by their creativity, I like to build stuff)
 
   We know that this is inclined to cooperate with others, and are further motivated by the knowledge that their food supply will run out soon. So, we have a pretty easy decision to make.  Should we invite them to cooperate in the great building of humanity, or should we throw rocks at them?
 
@@ -142,10 +171,17 @@ CHOICE2-CLOSEST GROUP:
 
 
 ---------------
-
+CHOICE15: Go to lazy group
 Our walk to our final destination is a long one. They are all the way down by the river.
 convo
 "Isn't this the group described as being lazy?" you ask. "Strange that the lazy people would travel this far away just to sit around and do nothing."
 
 
 Thanks to the communciation and relationship-buidling, everyone cooperates, thrives and humanity is saved!
+
+
+Now, amidst all of the hugging, hand-shaking, back-slapping, joyful crying and general congratulatory revelrie, you may also be wondering, how close did I come to making the wrong choice and ending humanity's last hope? What did I miss by making the choices that I made.
+
+Let me assure you that although you and I make an amazing team, our success was guaranteed. To save both your time and mine, and to make sure getting to know each other wasn't cut short by quick wins or losses, you've experienced most major plot points one way or another regardless of your decisions.
+
+Like coding, there is more than one way to get to the right answer. Some may take longer, some may be more clear or elegant, but xxx works.
