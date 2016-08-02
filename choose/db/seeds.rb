@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-outcomes = Outcome.create([{ name: 'Setup', text: 'Two weeks ago...', visited?: 0 }, { name: 'Choose: easy/hard', text: 'How should...', visited?: 0, causing_choice_id: 1 },{ name: 'Go to defense group', text: 'We visit...', visited?: 0 },{ name: 'Go to shelter group', text: "We have arrived...", visited?: 0 },{ name: 'Choose: leave/apologize', text: "Should we...", visited?: 0 },{ name: 'Go to food group', visited?: 0, text: "Based on..." },{ name: 'Choose: cooperate', visited?: 0 },{ name: 'Success with shelter group', text: 'Not surprisingly,', visited?: 0 }, { name: "Stupid choice", visited?: 0 }, { name: "Gain trust" , text: "This small choice...", visited?: 0 }, { name: "Skepticism", text: "Group leaders...", visited?: 0 }, { name: "Gain trust of food group" , text: "", visited?: 0 }])
+outcomes = Outcome.create([{ name: 'Setup', text: 'Two weeks ago...', visited?: 0 }, { name: 'Choose: easy/hard', text: 'How should...', visited?: 0, causing_choice_id: 1 },{ name: 'Go to defense group', text: 'We visit...', visited?: 0 },{ name: 'Go to shelter group', text: "We have arrived...", visited?: 0 },{ name: 'Choose: leave/apologize', text: "Should we...", visited?: 0 },{ name: 'Go to food group', visited?: 0, text: "Based on..." },{ name: 'Choose: cooperate', visited?: 0 },{ name: 'Success with shelter group', text: 'Not surprisingly,', visited?: 0 }, { name: "Stupid choice", visited?: 0 }, { name: "Gain trust" , text: "This small choice...", visited?: 0 }, { name: "Skepticism", text: "Group leaders...", visited?: 0 }, { name: "Gain trust of food group 2" , text: "For whatever reason", visited?: 0 }, { name: "Quit", text: "We aren't quitters!" visited?: 0 }])
 
 choice1 = Choice.create(name: 'Plan', text: 'Great choice!', resulting_outcome_id: 2, previous_outcome_id: 1 )
 choice2 = Choice.create(name: 'Closest', text: 'You know...', resulting_outcome_id: 3, previous_outcome_id: 1 )
@@ -18,11 +18,12 @@ choice7 = Choice.create(name: 'Go', text: "Fortunately, they take this as apolog
 choice8 = Choice.create(name: 'Apologize', text: "Fortunately, they accept", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 5)
 choice9 = Choice.create(name: 'Rocks', text: "Seriously?", resulting_outcome_id: 9, previous_outcome_id: 4)
 choice10 = Choice.create(name: 'Cooperate', text: "Great choice!", resulting_outcome_id: 8, previous_outcome_id: 4)
-choice11 = Choice.create(name: 'Yes', text: "Well, I always say...", previous_outcome_id: 6)
-choice12 = Choice.create(name: 'No', text: "Hmmmm.", previous_outcome_id: 6)
-choice13 = Choice.create(name: 'Trust Falls' , text: "Why not?" )
-choice14 = Choice.create(name: 'Manual Labor' , text: '')
-choice15 = Choice.create(name: 'Go to lazy group', text: '')
+choice11 = Choice.create(name: 'Yes', text: "Well, I always say...", previous_outcome_id: 6, resulting_outcome_id: 10)
+choice12 = Choice.create(name: 'No', text: "Hmmmm.", previous_outcome_id: 6, resulting_outcome_id: 11)
+choice13 = Choice.create(name: 'Trust Falls' , text: "Why not?", resulting_outcome_id: 12 )
+choice14 = Choice.create(name: 'Manual Labor' , text: '', resulting_outcome_id: 12)
+choice15 = Choice.create(name: 'Go to lazy group', text: 'Our walk...', resulting_outcome_id: 14)
+choice16 = Choice.create(name: 'Quit', text: '', resulting_outcome_id: 13)
 
 choice20 = Choice.create(name: "After 8", resulting_outcome_id: 3, alt_resulting_outcome_id: 6, previous_outcome_id: 8)
 

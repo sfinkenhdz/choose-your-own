@@ -141,7 +141,7 @@ CHOICE2-CLOSEST GROUP:
 
     CHOICE14: Manual Labor
 
-    OUTCOME11: Gain trust of food group
+    OUTCOME12: Gain trust of food group
     For whatever reason, this act has been enough to gain the trust of the group. They now feel that you have proven your worth and sincerity. They agree to cooperate.
 
     Now, we will travel to our final group.
