@@ -2,8 +2,6 @@ $(document).ready(function(){
   $('.adventure').on('click', function(event){
     event.preventDefault();
     $('.main-container').css('background-image', 'url(/assets/treeline.jpg)');
-    // $('.adventure').slideToggle();
-    // $('.resume').slideToggle();
     $('div:hidden').removeClass('hidden');
     $('.header').slideToggle('slow');
   });
