@@ -3,11 +3,11 @@
   </div>
 
   <div>
-    <%= @choice.resulting_outcome.text %>
+    <%= @result.text %>
   </div>
 
   <div>
-    <% @choice.resulting_outcome.next_choices.each do |choice| %>
+    <% @result.next_choices.each do |choice| %>
         <%= button_to choice.name.upcase, choice, remote: true, method: :get, class: "choice" %>
       <% end %>
   </div>
