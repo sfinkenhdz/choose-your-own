@@ -12,9 +12,9 @@ outcomes = Outcome.create([
   { name: 'Go to defense group', text: 'We visit...', visited?: 0 },
   { name: 'Go to shelter group', text: "We have arrived...", visited?: 0 },
   { name: 'Choose: leave/apologize', text: "Should we...", visited?: 0 },
-  { name: 'Go to food group', visited?: 0, text: "Based on..." },
+  { name: 'Go to food group', visited?: 0, text: "Now that we have succeeded..." },
   # { name: 'Choose: cooperate', visited?: 0 },
-  { name: "Conclusion", text: "Now, amidst all", visited?: 0 }
+  { name: "Conclusion", text: "Now, amidst all", visited?: 0 },
   { name: 'Success with shelter group', text: 'Not surprisingly,', visited?: 0 },
   { name: "Stupid choice", visited?: 0 },
   { name: "Gain trust" , text: "This small choice...", visited?: 0 },
@@ -49,7 +49,7 @@ choice16 = Choice.create(name: 'Who needs them?', text: 'Well, we need them.', r
 choice17 = Choice.create(name: 'We know everything!', text: 'Buuut...', resulting_outcome_id: 15)
 choice18 = Choice.create(name: "No, we don't.", text: '', resulting_outcome_id: 16)
 choice19 = Choice.create(name: 'Ask for help.', text: 'Excuse me', resulting_outcome_id: 17)
-choice20 = Choice.create(name: "After 8", resulting_outcome_id: 3, alt_resulting_outcome_id: 6, previous_outcome_id: 8)
+choice20 = Choice.create(name: "On to the next group.", resulting_outcome_id: 3, alt_resulting_outcome_id: 6, previous_outcome_id: 8)
 choice21 = Choice.create(name: 'Keep pretnending.', text: '', resulting_outcome_id: 18)
 choice22 = Choice.create(name: 'Yes.', text: 'Yes, thanks.', resulting_outcome_id: 17)
 choice23 = Choice.create(name: 'Nope.', text: 'Nope.', resulting_outcome_id: 19)

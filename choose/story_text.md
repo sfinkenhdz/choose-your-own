@@ -107,6 +107,7 @@ CHOICE2-CLOSEST GROUP:
 
   GO:  Fortunately, the group members took our retreat as a show of respect and have agreed to cooperate and share what their knowledge with the others.
 
+    OUTCOME6:
     FOOD: Now that we have succeeded with this group, on to the next! Based on (decision), next we go to the group that has mastered the food system.
 
   APOLOGIZE: Fortunately, the group members accept our apology. It takes a big person to admit that they are wrong! They now respect us and have agreed to cooperate.
