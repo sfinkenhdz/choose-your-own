@@ -28,9 +28,7 @@ $(document).ready(function(){
      .done(function(response){
       $(".outcome").html(response);
      })
-
    });
-
 
 });
 

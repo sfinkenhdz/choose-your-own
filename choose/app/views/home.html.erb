@@ -16,12 +16,7 @@
 </div>
 
 <div class="outcome hidden">
-  <%= @outcomes[0].text %>
-  <div>
-    <% @outcomes[0].next_choices.each do |choice| %>
-      <%= button_to choice.name.upcase, choice, remote: true, method: :get, class: "choice" %>
-    <% end %>
-  </div>
+  <%= render "outcomes/outcome_details" %>
 </div>
 
 

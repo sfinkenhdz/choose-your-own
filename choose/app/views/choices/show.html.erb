@@ -1,13 +1,2 @@
-  <div>
-  <%= @choice.text %>
-  </div>
-
-  <div>
-    <%= @result.text %>
-  </div>
-
-  <div>
-    <% @result.next_choices.each do |choice| %>
-        <%= button_to choice.name.upcase, choice, remote: true, method: :get, class: "choice" %>
-      <% end %>
-  </div>
+  <div><%= @choice.text %></div>
+  <div><%= render "outcomes/outcome_details" %></div>

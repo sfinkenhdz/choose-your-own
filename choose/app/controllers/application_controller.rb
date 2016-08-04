@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def home
-    @outcomes = Outcome.all
+    @result = Outcome.first
+    # @outcomes = Outcome.all
     render '/home'
   end
 
