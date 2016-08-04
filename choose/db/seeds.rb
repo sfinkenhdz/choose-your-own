@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
 outcomes = Outcome.create([
   { name: 'Setup', text: 'Two weeks ago...', visited?: 0 },
@@ -97,11 +90,5 @@ NextOption.create(outcome_id: 19, choice_id:25)
 NextOption.create(outcome_id: 20, choice_id: 17)
 
 
-PreChoice.create(outcome_id: 3, choice_id: 2)
-PreChoice.create(outcome_id: 3, choice_id: 4)
-PreChoice.create(outcome_id: 3, choice_id: 20)
 
-
-
-#Possibility and Result ?
 

@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
 
   def home
     @result = Outcome.first
-    # @outcomes = Outcome.all
     render '/home'
   end
 
