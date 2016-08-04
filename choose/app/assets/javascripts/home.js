@@ -6,6 +6,17 @@ $(document).ready(function(){
     $('.header').slideToggle('slow');
   });
 
+  $('.start_over').on('click', function(event){
+    event.preventDefault();
+    $.ajax({
+      method: "put",
+      url: "/outcomes/reset"
+    })
+    .done(function(response){
+      $(".outcome").html(response);
+    })
+  })
+
   $('.outcome').on('click', '.button_to', function(event){
       event.preventDefault();
       var url = $(this).attr("action");

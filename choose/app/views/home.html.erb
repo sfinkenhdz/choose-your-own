@@ -11,6 +11,10 @@
   </div>
 </div>
 
+<div class="start_over hidden">
+  <%= button_to "Start Over", outcomes_reset_path, remote: true, method: :put %>
+</div>
+
 <div class="outcome hidden">
   <%= @outcomes[0].text %>
   <div>
