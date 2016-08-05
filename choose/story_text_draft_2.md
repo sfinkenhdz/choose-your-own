@@ -1,17 +1,3 @@
-<!-- Choose Resume or Adventure.
-
--If you click on resume: Boring. Let's try again.
--If you click on adventure:
-Great. I think we'll learn a lot more about each other this way.
-
--As do many great adventures, this one begins with the near destruction of earth.
-Choose your favorite disaster:
-  -zombies
-  -dinosaurs
-  -alien-carrying meteor
-  -oubreak
-(Sets background and language.) -->
-
 OUTCOME1 - TEXT
 
 As do many great adventures, this one begins with the near destruction of Earth. The planet has been devastated by a massive meteor shower. As well as causing immediate destruction, the meteors' impact has set off a chain reaction of fire, floods, tsunamis and a slew of other disasters.
@@ -38,44 +24,35 @@ GROUP 3: appears to be doing, well, not much of anything. They are camped out by
 
 GROUP 4: has food figured out. They scavenged food from the wreckage, but rather than eating all of it directly, they have been using it primarily as bait to lure various types of small game. (Who knew squirrels had such a love of Skittles and SweetTarts?) They have also explored a much larger area than the other groups and have found various clusters of other edibles that can be foraged. They're cautious, but welcoming.
 
-<!-- They of course have a large fire that is always tended. Just because humans are on the verge of extinction doesn't mean we can't have a hot meal. This has helped keep predators at bay, but the bait strategy is attracting more and more unwanted guests.  -->
-
-<!--   Oh, one last thing. We have a sidekick--Spiffy, the penguin. We'll be able to have more dynamic interactions with three people. -->
-
 Now, for our first decision: Shall we make a plan, or start by visiting the group closest to us?
 END OF OUTCOME1 TEXT
 
 CHOICE1-PLAN:
   TEXT:
-  Great choice! It's important to have a plan, but the clock is ticking so let's be sure we don't spend all of our time planning, leaving no time to put the plan into action.
+  Great choice! I typically like to have a plan and goals, but some processes can be too cumbersome and inflexible.
+<!--
+  For a bigger team and a different sort of project agile methodologies would be a great tool. -->
 
   Let's decide how to prioritize, then head out.
 
 OUTCOME 2: CHOOSE Easy/Hard
-  How should we prioritize which groups to visit first? Easiest to persuade, or most difficult - get a sense of what they need to be persuaded (most knowledge)
+  Should we start with the easiest group to persuade, or most difficult?
   END
 
 CHOICE3-EASIEST:
   TEXT
-  I would have started with the most difficult group, because when solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
+  I would have started with the most difficult group, because when solving a problem, I like to get a feel for the most challenging parts early on.
 
-  But, there are good reasons to get a good ally on our side early on (deliverable), and since we're working together, both of our ideas are important.
+  There are also good reasons to get an ally on our side early. It's nice to have a concrete deliverable.And, since we're working together, both of our ideas are important.
   END
 
 OUTCOME4:
   GO TO SHELTER GROUP.
   (Text = below.)
 
-<!-- MV RESOURCE:
-  I would have started with the most difficult group, because when solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
-
-  But, there are good reasons to get a good resource on our side early on (deliverable), show what we can do, and since we're working together, both of our ideas are important.
-
-  GO TO FOOD. -->
-
 CHOICE4-MOST DIFFICULT:
   TEXT
-  This is what I would have chosen, too. When solving a problem, I like to get an idea of the scope, especially getting a feel for the parts that could be the most challenging or time-consuming. (biggest variable)
+  This is what I would have chosen, too. When solving a problem, I like to get a feel for the most challenging parts early on.
 
   GO TO DEFENSE/OFFENSE.
   END
@@ -83,7 +60,7 @@ CHOICE4-MOST DIFFICULT:
 
 CHOICE2-CLOSEST GROUP:
   TEXT
-  You know, I probably would have spent some time planning, but I appreciate your desire to get started. I think it is important to plan and make informed decisions, but sometimes it is too easy to spend too much time making the plan, and not enough executing it. We'll need to talk to everyone, so let's go!
+  You know, I probably would have spent some time planning, but I appreciate your desire to get started. We'll need to talk to everyone, so let's go!
   END
 
   OUTCOME3-GO TO DEFENSE/OFFENSE.
@@ -92,16 +69,16 @@ CHOICE2-CLOSEST GROUP:
 
   OUTCOME3-DEFENSE/OFFENSE:
   TEXT:
-  We visit the group that has a good system for protecting themselves from (disaster). They have decent shelter, and a moderate food supply. They recognize that both of these needs could be better met since they have been focusing on stopping the spread of (disaster).
+  We visit the group that is developing a system to attack the Daleks. They have decent shelter, and a moderate food supply. They recognize that both of these needs could be better met.
 
-  This is a tough group becasue xxx. They are pretty ego-tystical and think they are better than the other groups.
+  This is a tough group because they are pretty ego-tystical and think they are better than the other groups.
 
   Should we tell them how great they are, or tell them they are wrong?
   END
 
   CHOICE5-THEY ARE GREAT:
   TEXT
-  Like so many of us, this group responds really well to positive reinforcement. And, they really have done exceptional work crafting a means of stopping the spread of (disaster). Making the temperamental members of this group feel good about themselves let them feel more comfortable admitting they need xx from the others.
+  Like so many of us, this group responds really well to positive reinforcement. And, our praise is sincere; they really have done exceptional work. Making the temperamental members of this group feel good about themselves let them feel more comfortable admitting they need help from the others.
 
   Success!
   END
@@ -116,15 +93,12 @@ CHOICE2-CLOSEST GROUP:
 
   GO:  Fortunately, the group members took our retreat as a show of respect and have agreed to cooperate and share what their knowledge with the others.
 
-    OUTCOME6:
-    FOOD: Now that we have succeeded with this group, on to the next! Based on (decision), next we go to the group that has mastered the food system.
-
   APOLOGIZE: Fortunately, the group members accept our apology. It takes a big person to admit that they are wrong! They now respect us and have agreed to cooperate.
 
-    FOOD: Now that we have succeeded with this group, on to the next! Based on (decision), next we go to the group that has mastered the food system.
+  OUTCOME6:
+    FOOD: Now that we have succeeded with this group, on to the next! Next, we go to the group that has mastered the food system.
 
-    As we near this group, we pass a child gathering firewood to bring back. Should we take the time to stop to help?
-
+    As we near the group, we pass a child gathering firewood to bring back. Should we take the time to stop to help?
 
     CHOICE11: YES
     Well, you know what I always say. "Be helpful."
@@ -141,9 +115,7 @@ CHOICE2-CLOSEST GROUP:
     This small choice helps us gain trust immediately.
 
     CHOICE12: NO
-    "Hmmmm, I think it's usually a good idea to be helpful and pitch in whenever possible, but let's see what happens," I say.
-
-    "I think 'Be helpful' is a pretty good credo, if you know what I mean."
+    "Hmmmm, I think it's usually a good idea to be helpful and pitch in whenever possible, but let's see what happens," I say. "I think 'Be helpful' is a pretty good credo, if you know what I mean."
 
     OUTCOME11: Skepticism
     Group leaders are a little skeptical that we have come to them asking for cooperation after having just decided to not help with a simple task.
@@ -163,12 +135,13 @@ CHOICE2-CLOSEST GROUP:
     CHOICE15: Go to lazy group
     (text below)
 
-
-  OUTCOME4, SHELTER: We have arrived at a patchwork of makeshift homes. (description of some -- vague reference to one that looks like a TARDIS) All provide basic protection from the elements and at least some barrier to fend off attacking creatues. However, a lack of long-term planning is evident. The dwellings built first are far superior and some have redundant features using materials that would have been better saved for homes built later on.
+  OUTCOME4, SHELTER: We have arrived at a patchwork of makeshift homes. All provide basic protection from the elements and at least some barrier to fend off attacking creatues. However, a lack of long-term planning is evident. The dwellings built first are far superior and some have redundant features using materials that would have been better saved for homes built later on.
 
   (impressed by their creativity, I like to build stuff)
 
-  We know that this is inclined to cooperate with others, and are further motivated by the knowledge that their food supply will run out soon. So, we have a pretty easy decision to make.  Should we invite them to cooperate in the great building of humanity, or should we throw rocks at them?
+  RESTful design
+
+  We know that this is inclined to cooperate, and are further motivated by the knowledge that their food supply will run out soon. So, we have a pretty easy decision to make.  Should we invite them to cooperate in the great re-building of humanity, or should we throw rocks at them?
 
   CHOICE 10: INVITE TO COOPERATE: Great choice!
 
@@ -180,13 +153,15 @@ CHOICE2-CLOSEST GROUP:
   CHOICE 10: INVITE TO COOPERATE: Great choice!
 
     OUTCOME 8: SUCCESS WITH SHELTER
-    Not surprisingly, this hungry, collaborative group is more than happy to join our efforts to rebuild humanity.
+    Not surprisingly, this hungry, collaborative group is more than happy to join our efforts.
 
+    The walk to our final destination is a long one. They are all the way down by the river. And, the final group is considered quite lazy by the others.
 
+    Should we go, or skip it?
 
 ---------------
-CHOICE15: Go to lazy group
-Our walk to our final destination is a long one. They are all the way down by the river.
+CHOICE15: Let's go!
+-- to outcome 14
 
 CHOICE16:
 Name: Who needs them?
@@ -194,7 +169,8 @@ Text: "Well, we need them. Remember our task is to get everyone to work together
 
 OUTCOME13:
 Name: Yes, we do.
-Text: Let's go. -- to choice15
+Text: Most people have something to contribute. It's just a matter of figuring out what it is, and how to motivate them.
+-- to choice15
 
 OUTCOME14: Leave
 As we are about to leave, you ask, "Isn't this the group described as being lazy? Strange that the lazy people would travel this far away just to sit around and do nothing."
@@ -258,41 +234,37 @@ CHOICE19: Ask for help.
 
 "Oh yes," she replies. "We spend part of the day here, but we are back at the caves now. Come with me."
 
-
 OUTCOME17:
 Name: Arrive at final group.
 Text: When we arrive at the caves, members of the group are happy to show us around. It quickly becomes evident that the so-called lazy group is anything but.
 
-As they show us around and explain what they've been up to, it becomes clear that this group is actually an excellent team. They have been working hard, but took the time to assess what they needed, resources available, and each person's strengths and weaknesses. Because they have been working so well together, they haven't appeared quite as stressed out as the other groups, and have even been having some fun.
+As they show us around and explain what they've been up to, it becomes clear that this group is actually an excellent team. They have been working hard, communicating consistently, and took the time to assess what they needed, resources available, and each person's strengths and weaknesses. Because they have been working so well together, they haven't appeared quite as stressed out as the other groups, and have even been having some fun.
 
-One key to success was realizing the benefit of the caves. Low entrances and narrow passageways make many parts of the caves inaccessible to the Daleks, and provide shelter. Proximity to the river provides a variety of potential food sources.
+By consistently exploring, experimenting and communicating they have been able to figure out how to best use the benefits of the cave and river to meet their needs. And, they realize that saving the world isn't easy, so they need to have some fun, too.
 
-By consistently exploring, experimenting and communicating they have been able to figure out how to best use the benefits of the cave and river, how to maximize their food sources without depleting them and have developed a system of standing guard, preparing food, exploring. And, they realize need to have some fun.
+They have been considering reaching out to other groups, so are happy to join our collective efforts.
 
-Next step, reach out to other groups, so happy to join our collective efforts.
+Now, that we have done our part, Dr. Who returns. With a lot of cooperation and a sonic screwdriver, the world is rid of the Daleks!
 
-"I guess that's why you shouldn't make assumptions," you comment.
-
-"Yes. That's pretty important. I'm glad we didn't write them off. This group has really figured it out," I say. "Values, type of people I'd like to work with, etc. And, it's really paying off!"
+How should we celebrate?
 
 CHOICE26:
 Name: Party
-Thanks to our hard work and good decisions, everyone cooperates, thrives and humanity is saved!
+Humanity is saved!
 
 Let's party!
 
 CHOICE27:
 Name: Parade
-Thanks to our hard work and good decisions, everyone cooperates, thrives and humanity is saved!
+Humanity is saved!
 
 Let's have a parade!
 
 CHOICE28:
 Name: Both
-Thanks to our hard work and good decisions, everyone cooperates, thrives and humanity is saved!
+Humanity is saved!
 
 This deserves a big celebration--let's go nuts and have a party AND a parade!
-
 
 CHOICE21:
 Name: Keep pretending.
@@ -306,13 +278,11 @@ CHOICE22:
 Name: Yes.
 Text:
 "Yes, thanks! We're looking for a group of people living down here by the river."
--->OUTCOME17
-
+-- outcome17
 
 CHOICE23:
 Name: Nope.
 Text: "Nope. We're fine. Everything under control here. We were actually just, uh, leaving."
-
 
 OUTCOME19:
 We confidently stride back from where we came. The woman looks at us strangely and walks away.
@@ -333,13 +303,10 @@ Name: Ask for directions.
 
 I haven't always liked asking for help.
 Isn't asking for help great?
-
--->OUTCOME17
-
+-- outcome17
 
 CHOICE18:
 Name: No, we don't.
-
 
 OUTCOME21:
 Name: Conclusion
@@ -348,14 +315,10 @@ Now, amidst all of the hugging, hand-shaking, back-slapping, joyful crying and g
 
 Let me assure you that although you and I make an amazing team, our success was guaranteed. To save both your time and mine, and to make sure getting to know each other wasn't cut short by quick wins or losses, you've experienced most major plot points one way or another regardless of your decisions.
 
-Like coding, there is more than one way to get to the right answer. Some may take longer, some may be more clear or elegant, but xxx works.
-(language, learn and do differently next time)
-xxxx
+Like coding, there is more than one way to get to the right answer. Some may take longer, some may be more clear or elegant, but one way or another, you have achived a working solution.
 
-Get to know me more, learn more about the process of creating this adventure or what adventure could be coming up?
+Now that we've saved the world, imagine what other else we could do?
 
-other adventures/projects we could take on
+You can contact me at: sarah.finken@gmail.com or 773-726-9405.
 
-Contact me at: sarah.finken@gmail.com or 773-726-9405.
 
-(Recap?)

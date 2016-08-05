@@ -1,6 +1,30 @@
 
 outcomes = Outcome.create([
-  { name: 'Setup', text: 'Two weeks ago...', visited?: 0 },
+  { name: 'Setup', text: "As do many great adventures, this one begins with the near destruction of Earth. The planet has been devastated by a massive meteor shower. As well as causing immediate destruction, the meteors' impact has set off a chain reaction of fire, floods, tsunamis and a slew of other disasters.
+
+    To make matters even worse, the Daleks see this moment of vulnerability as the perfect opportunity to wipe out what remains of the human race.
+
+Dr. Who has called us in to help save the world.
+
+[Note: there will be a few references to Dr. Who throughout this adventure. If you are unfamiliar, fear not! Here's what you need to know:
+  1. Dr. Who is Time Lord. He travels through time and space saving our world and others in a ship called the TARDIS that looks like a 1960's police telephone box.
+  2. His archnemeses are the Daleks. They are deadly and pure evil.
+  3. You should really do yourself a favor and start watching Dr. Who. It's not on Netflix anymore, so you'll have to invest in DVDs. You won't regret it.]
+
+Here are the details that Dr. Who shares with us-
+
+The few remaining pockets of survivors near us have clustered into a handful of groups, with different skills and culture. None of the groups will likely survive long without cooperation from the others.
+
+Here's what we know about the groups:
+GROUP 1: has decided to tackle to the Dalek threat head on. They are smart and analytical and have created a system for tracking Daleks if they are nearby, and are working to exploit the few Dalek weaknesses to create a system of defense. They are having success, but it also sounds like there is a lot of competition and in-fighting within the group.
+
+GROUP 2: is thinking about protection from the Daleks, extreme weather, and other threats. They are very creative, and have created a wide variety of shelter out of anything they can find. It works, but quality varies greatly. So far they have found enough food in the ruins to survive, but this will soon run out and they realize this.
+
+GROUP 3: appears to be doing, well, not much of anything. They are camped out by a river and don't seem to have much of a plan. The land near the river grows various berry bushes and other edible plants. The group seems to be doing all right for now, and don't seem too interested in a longer-term plan or working harder.
+
+GROUP 4: has food figured out. They scavenged food from the wreckage, but rather than eating all of it directly, they have been using it primarily as bait to lure various types of small game. (Who knew squirrels had such a love of Skittles and SweetTarts?) They have also explored a much larger area than the other groups and have found various clusters of other edibles that can be foraged. They're cautious, but welcoming.
+
+Now, for our first decision: Shall we make a plan, or start by visiting the group closest to us?\n", visited?: 0 },
   { name: 'Choose: easy/hard', text: 'How should...', visited?: 0, causing_choice_id: 1 },
   { name: 'Go to defense group', text: 'We visit...', visited?: 0 },
   { name: 'Go to shelter group', text: "We have arrived...", visited?: 0 },
