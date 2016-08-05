@@ -42,11 +42,4 @@ ActiveRecord::Schema.define(version: 20160726221116) do
     t.datetime "updated_at",        null: false
   end
 
-  create_table "pre_choices", force: :cascade do |t|
-    t.integer  "outcome_id"
-    t.integer  "choice_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

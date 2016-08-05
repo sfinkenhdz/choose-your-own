@@ -7,20 +7,25 @@
 }
 
 .outcome {
-  width: 50%;
-  height: 120px;
-  position: absolute;
-  left: 50%;
-  top: 30%;
-/*  background-color: #204060;
-*/
-  background-color: #333333;
-  opacity: .8;
-  transform: translate(-50%,-50%);
-  border: 3px solid white;
-  padding: 3px;
+  position: relative;
+  padding: 10px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  background-color: gray;
+  opacity: .8;
+  width: 100%;
+}
+
+.border {
+  border: 3px solid white;
+  position: absolute;
+  margin: auto;
+  top: 50px; left: 0; bottom: 0; right: 0;
+  width: 60%;
+  height: 80%;
+  overflow-y: scroll;
+  padding: 5px;
+  display: inline-block;
 }
 
 .button_to {

@@ -12,9 +12,12 @@
   <%= button_to "Start Adventure", outcomes_reset_path, remote: true, method: :put %>
 </div>
 
-<div class="outcome hidden">
-  <%= render "outcomes/outcome_details" %>
+<div class="border hidden">
+  <div class="outcome hidden">
+    <%= render "outcomes/outcome_details" %>
+  </div>
 </div>
+
 
 
 

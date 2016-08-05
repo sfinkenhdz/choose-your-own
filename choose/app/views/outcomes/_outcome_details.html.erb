@@ -1,5 +1,5 @@
   <div>
-    <%= @result.text %>
+    <%= h(@result.text).gsub(/\n/, '<br/>').html_safe %>
   </div>
 
   <div>
