@@ -13,11 +13,12 @@
   margin: auto;
   top: -100px; left: 0; bottom: 0; right: 0;
   width: 60%;
-  height: 35%;
-  overflow-y: scroll;
+  height: 50%;
+  overflow-y: auto;
   display: inline-block;
   background-color: gray;
   opacity: .8;
+  padding: 5px;
 }
 
 .button_to {
