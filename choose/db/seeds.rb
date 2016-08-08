@@ -45,7 +45,9 @@ Now, we just need to ask for their cooperation.
 Should we tell them how great they are, or tell them they aren't as smart as they think they are?\n", visited?: 0 },
   { name: 'Go to shelter group', text: "We have arrived at a patchwork of makeshift homes. All provide basic protection from the elements and at least some barrier to fend off attacking creatues. However, a lack of long-term planning is evident. The dwellings built first are far superior and some have redundant features using materials that would have been better saved for homes built later on. They have gathered piles of similar materials, but they are in no logical order so builders just wander around asking and looking for what they need.
 
-We know that this is inclined to cooperate, and are further motivated by the knowledge that their food supply will run out soon. So, we have a pretty easy decision to make.  Should we invite them to cooperate in the great re-building of humanity, or should we throw rocks at them?\n", visited?: 0 },
+We know that this is inclined to cooperate, and are further motivated by the knowledge that their food supply will run out soon.
+
+So, we have a pretty easy decision to make.  Should we invite them to cooperate in the great re-building of humanity, or should we throw rocks at them?\n", visited?: 0 },
   { name: 'Choose: leave/apologize', text: "Should we go, or apologize?\n", visited?: 0 },
   { name: 'Go to food group', visited?: 0, text: "Now that we have succeeded with this group, on to the next! Next, we go to the group that has mastered the food system.
 
@@ -81,7 +83,19 @@ The builders are overjoyed.
 
 Now, on to our next group.\n", visited?: 0 },
   { name: "Stupid choice", text: "Seriously?\n", visited?: 0 },
-  { name: "Gain trust" , text: "This small choice helps us gain trust immediately.\n", visited?: 0 },
+  { name: "Gain trust" , text: "'Well, you know what I always say--Be helpful.'
+
+'Oh really,' you respond. 'That's what you always say?'
+
+'Yep. Always. It's something of a credo of mine, if you know what I mean.'
+
+We all gather armloads of firewood, from small twigs for kindling to larger logs.
+
+When we arrive, the group leaders are impressed by our helpfulness.
+
+This group is very organized, detail-oriented and good at developing systems, so they also appreciate that we thought to consider the variety of wood that would be needed.
+
+This small choice helps us gain trust immediately.\n", visited?: 0 },
   { name: "Skepticism", text: "Group leaders are a little skeptical that we have come to them asking for cooperation after having just decided to not help with a simple task.
 
 We are going to have to gain their trust.
@@ -141,78 +155,67 @@ Should we ask for directions, or keep faking it?
 Okay, this is getting silly.\n", visited?: 0 },
   { name: "To the caves!", visited?: 0 } ])
 
+choices = Choice.create([
+  {name: 'Plan', text: "Great choice!  I typically like to have a plan and goals.
 
-choice1 = Choice.create(name: 'Plan', text: "Great choice!  I typically like to have a plan and goals.
+  How should we prioritize which group to start with?", resulting_outcome_id: 2, previous_outcome_id: 1},
+  {name: 'Closest', text: "You know, I probably would have spent some time planning, but I appreciate your desire to get started. We'll need to talk to everyone, so let's go!\n", resulting_outcome_id: 3, previous_outcome_id: 1},
+  {name: 'Easiest', text: "I would have started with the most difficult group, because when solving a problem, I like to get a feel for the most challenging parts early on.
 
-  How should we prioritize which group to start with?\n", resulting_outcome_id: 2, previous_outcome_id: 1 )
-choice2 = Choice.create(name: 'Closest', text: "You know, I probably would have spent some time planning, but I appreciate your desire to get started. We'll need to talk to everyone, so let's go!\n", resulting_outcome_id: 3, previous_outcome_id: 1 )
-choice3 = Choice.create(name: 'Easiest', text: "I would have started with the most difficult group, because when solving a problem, I like to get a feel for the most challenging parts early on.
+  There are also good reasons to get an ally on our side early. It's nice to have a concrete deliverable.And, since we're working together, both of our ideas are important. (it's important we collaborate)", resulting_outcome_id: 4, previous_outcome_id: 2},
+  {name: 'Hardest', text: "This is what I would have chosen, too. When solving a problem, I like to get a feel for the most challenging parts early on.", resulting_outcome_id: 3, previous_outcome_id: 2},
+  {name: 'They are great!', text: "Like so many of us, this group responds really well to positive reinforcement. And, our praise is sincere; they really have done exceptional work. (There's nothing worse than false praise!) Making the temperamental members of this group feel good about themselves let them feel more comfortable admitting they need help from the others.
 
-  There are also good reasons to get an ally on our side early. It's nice to have a concrete deliverable.And, since we're working together, both of our ideas are important. (it's important we collaborate)\n", resulting_outcome_id: 4, previous_outcome_id: 2)
-choice4 = Choice.create(name: 'Hardest', text: "This is what I would have chosen, too. When solving a problem, I like to get a feel for the most challenging parts early on.\n\n", resulting_outcome_id: 3, previous_outcome_id: 2)
-choice5 = Choice.create(name: 'They are great!', text: "Like so many of us, this group responds really well to positive reinforcement. And, our praise is sincere; they really have done exceptional work. (There's nothing worse than false praise!) Making the temperamental members of this group feel good about themselves let them feel more comfortable admitting they need help from the others.\n
+    Success!", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 3},
+  {name: 'Not so smart', text: "Whoa. Well, that made them mad. Now, they are demanding that we leave.", resulting_outcome_id: 5, previous_outcome_id: 3},
+  {name: 'Go', text: "Fortunately, the group members took our retreat as a show of respect and have agreed to cooperate and share what their knowledge with the others.", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 5},
+  {name: 'Apologize', text: "Fortunately, the group members accept our apology. It takes a big person to admit that they are wrong! They now respect us and have agreed to cooperate.", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 5},
+  {name: 'Rocks', resulting_outcome_id: 9, previous_outcome_id: 4},
+  {name: 'Cooperate', text: "Great choice!", resulting_outcome_id: 8, previous_outcome_id: 4},
+  {name: "Yes", previous_outcome_id: 6, resulting_outcome_id: 10},
+  {name: 'No', text: "'Hmmmm, I think it's usually a good idea to be helpful and pitch in whenever possible, but let's see what happens,' I say. 'I think 'Be helpful' is a pretty good credo, if you know what I mean.'", previous_outcome_id: 6, resulting_outcome_id: 11},
+  {name: 'Trust Falls' , text: "Why not?", resulting_outcome_id: 12, previous_outcome_id: 11},
+  {name: 'Manual Labor', resulting_outcome_id: 12, previous_outcome_id: 11},
+  {name: "Let's go!", resulting_outcome_id: 14, previous_outcome_id: 10},
+  {name: 'Who needs them?', text: "'Well, we need them. Remember our task is to get everyone to work together?'", resulting_outcome_id: 13, previous_outcome_id: 12},
+  {name: 'We know everything!', text: "'Buuuut, we don't know everything,' I whisper to you.
 
-  Success!\n\n", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 3)
-choice6 = Choice.create(name: 'Not so smart', text: "Whoa. Well, that made them mad. Now, they are demanding that we leave.\n", resulting_outcome_id: 5, previous_outcome_id: 3)
-choice7 = Choice.create(name: 'Go', text: "Fortunately, the group members took our retreat as a show of respect and have agreed to cooperate and share what their knowledge with the others.\n", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 5)
-choice8 = Choice.create(name: 'Apologize', text: "Fortunately, the group members accept our apology. It takes a big person to admit that they are wrong! They now respect us and have agreed to cooperate.\n", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 5)
-choice9 = Choice.create(name: 'Rocks', resulting_outcome_id: 9, previous_outcome_id: 4)
-choice10 = Choice.create(name: 'Cooperate', text: "Great choice!\n", resulting_outcome_id: 8, previous_outcome_id: 4)
-choice11 = Choice.create(name: "Yes", text: "'Well, you know what I always say--Be helpful.'
+  'They don't need to know that,' you whisper back.
 
-'Oh really,' you respond. 'That's what you always say?'
+  And, off we go.", resulting_outcome_id: 15, previous_outcome_id: 14},
+  {name: "No, we don't", resulting_outcome_id: 16, previous_outcome_id: 14},
+  {name: 'Ask for help', text: "'Excuse me!' I call out. 'We heard there was a group of people down here by the river.'
 
-'Yep. Always. It's something of a credo of mine, if you know what I mean.'
+  'Oh yes,' she replies. 'We spend part of the day here, but we are back at the caves now. Come with me.'", resulting_outcome_id: 17, previous_outcome_id: 15},
+  {name: "On to the next group", resulting_outcome_id: 3, alt_resulting_outcome_id: 6, previous_outcome_id: 8},
+  {name: 'Keep pretending',resulting_outcome_id: 18, previous_outcome_id: 15},
+  {name: 'Yes', text: "'Yes, thanks! We're looking for a group of people living down here by the river.'", resulting_outcome_id: 17, previous_outcome_id: 18},
+  {name: 'Nope', text: "'Nope. We're fine. Everything under control here. We were actually just, uh, leaving.'", resulting_outcome_id: 19, previous_outcome_id: 18},
+  {name: 'Ask for directions', text: "'Hi! We are looking for a group of people down here by the river. Do you know where they are?'
 
-We all gather armloads of firewood, from small twigs for kindling to larger logs.
+  'I sure do! Come with me,' he replies.
 
-When we arrive, the group leaders are impressed by our helpfulness.
+  I haven't always liked asking for help.
+  Isn't asking for help great?", resulting_outcome_id: 17, previous_outcome_id: 19},
+  {name: 'Ask for directions', text: "'Hi! We are looking for a group of people down here by the river. Do you know where they are?'
 
-This group is very organized, detail-oriented and good at developing systems, so they also appreciate that we thought to consider the variety of wood that would be needed.
-\n", previous_outcome_id: 6, resulting_outcome_id: 10)
-choice12 = Choice.create(name: 'No', text: "'Hmmmm, I think it's usually a good idea to be helpful and pitch in whenever possible, but let's see what happens,' I say. 'I think 'Be helpful' is a pretty good credo, if you know what I mean.'\n", previous_outcome_id: 6, resulting_outcome_id: 11)
-choice13 = Choice.create(name: 'Trust Falls' , text: "Why not?\n", resulting_outcome_id: 12, previous_outcome_id: 11 )
-choice14 = Choice.create(name: 'Manual Labor', resulting_outcome_id: 12, previous_outcome_id: 11)
-choice15 = Choice.create(name: "Let's go!", resulting_outcome_id: 14, previous_outcome_id: 10)
-choice16 = Choice.create(name: 'Who needs them?', text: "'Well, we need them. Remember our task is to get everyone to work together?'\n", resulting_outcome_id: 13, previous_outcome_id: 12)
-choice17 = Choice.create(name: 'We know everything!', text: "'Buuuut, we don't know everything,' I whisper to you.
+  'I sure do! Come with me,' he replies.
 
-'They don't need to know that,' you whisper back.
+  I haven't always liked asking for help.
+  Isn't asking for help great?", resulting_outcome_id: 17, previous_outcome_id: 19},
+  {name: 'Party', text: "Humanity is saved!
 
-And, off we go.\n", resulting_outcome_id: 15, previous_outcome_id: 14)
-choice18 = Choice.create(name: "No, we don't", resulting_outcome_id: 16, previous_outcome_id: 14)
-choice19 = Choice.create(name: 'Ask for help', text: "'Excuse me!' I call out. 'We heard there was a group of people down here by the river.'
+  Let's have a party!", resulting_outcome_id: 7, previous_outcome_id: 17},
+  {name: 'Parade', text: "Humanity is saved!
 
-'Oh yes,' she replies. 'We spend part of the day here, but we are back at the caves now. Come with me.'\n", resulting_outcome_id: 17, previous_outcome_id: 15)
-choice20 = Choice.create(name: "On to the next group", resulting_outcome_id: 3, alt_resulting_outcome_id: 6, previous_outcome_id: 8)
-choice21 = Choice.create(name: 'Keep pretending',resulting_outcome_id: 18, previous_outcome_id: 15)
-choice22 = Choice.create(name: 'Yes', text: "'Yes, thanks! We're looking for a group of people living down here by the river.'\n", resulting_outcome_id: 17, previous_outcome_id: 18)
-choice23 = Choice.create(name: 'Nope', text: "'Nope. We're fine. Everything under control here. We were actually just, uh, leaving.'\n", resulting_outcome_id: 19, previous_outcome_id: 18)
-choice24 = Choice.create(name: 'Ask for directions', text: "'Hi! We are looking for a group of people down here by the river. Do you know where they are?'
+  Let's have a parade!", resulting_outcome_id: 7, previous_outcome_id: 17},
+  {name: 'Both', text: "Humanity is saved!
 
-'I sure do! Come with me,' he replies.
+  This deserves a big celebration--let's go nuts and have a party AND a parade!", resulting_outcome_id: 7, previous_outcome_id: 17},
+  {name: "Caves", previous_outcome_id: 20, resulting_outcome_id: 17},
+  {name: "River", text: "Unfortuntely, when we arrive at the stretch of river where the loafers are supposed to be loafing, no one is there. No sign of any humans.
 
-I haven't always liked asking for help.
-Isn't asking for help great?\n", resulting_outcome_id: 17, previous_outcome_id: 19)
-choice25 = Choice.create(name: 'Ask for directions', text: "'Hi! We are looking for a group of people down here by the river. Do you know where they are?'
-
-'I sure do! Come with me,' he replies.
-
-I haven't always liked asking for help.
-Isn't asking for help great?\n", resulting_outcome_id: 17, previous_outcome_id: 19)
-choice26 = Choice.create(name: 'Party', text: "Humanity is saved!
-
-  Let's have a party!\n", resulting_outcome_id: 7, previous_outcome_id: 17)
-choice27 = Choice.create(name: 'Parade', text: "Humanity is saved!
-
-  Let's have a parade!\n", resulting_outcome_id: 7, previous_outcome_id: 17)
-choice28 = Choice.create(name: 'Both', text: "Humanity is saved!
-
-This deserves a big celebration--let's go nuts and have a party AND a parade!\n\n", resulting_outcome_id: 7, previous_outcome_id: 17)
-choice29 = Choice.create(name: "Caves", previous_outcome_id: 20, resulting_outcome_id: 17)
-choice30 = Choice.create(name: "River", text: "Unfortuntely, when we arrive at the stretch of river where the loafers are supposed to be loafing, no one is there. No sign of any humans.
-
-'Well, I guess it's on to the caves.'\n", previous_outcome_id: 16, resulting_outcome_id: 20)
+  'Well, I guess it's on to the caves.'", previous_outcome_id: 16, resulting_outcome_id: 20}])
 
 NextOption.create(outcome_id: 1, choice_id: 1)
 NextOption.create(outcome_id: 1, choice_id: 2)
