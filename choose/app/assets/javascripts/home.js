@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.start').on('click', function(event){
     event.preventDefault();
     var button = $(this);
-    $('.main-container').css('background-image', 'url(/assets/treeline.jpg)');
+    $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
     $('div:hidden').removeClass('hidden');
     $('.header').hide('slow');
     $(button).text("Start Over");
