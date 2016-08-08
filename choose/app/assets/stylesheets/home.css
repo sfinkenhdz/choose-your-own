@@ -1,31 +1,23 @@
-.resume {
-  display: inline-block;
-}
-
-.adventure {
-  display: inline-block;
-}
 
 .outcome {
   position: relative;
   padding: 10px;
-  color: white;
+  color: navy;
   font-size: 16px;
-  background-color: gray;
-  opacity: .8;
-  width: 100%;
+  background-color: transparent;
 }
 
 .border {
   border: 3px solid white;
   position: absolute;
   margin: auto;
-  top: 50px; left: 0; bottom: 0; right: 0;
+  top: -100px; left: 0; bottom: 0; right: 0;
   width: 60%;
-  height: 80%;
+  height: 35%;
   overflow-y: scroll;
-  padding: 5px;
   display: inline-block;
+  background-color: gray;
+  opacity: .8;
 }
 
 .button_to {
