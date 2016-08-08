@@ -12,6 +12,10 @@
   <%= button_to "START ADVENTURE", outcomes_reset_path, remote: true, method: :put, class: "start_button" %>
 </div>
 
+<div class="start hidden">
+  <%= button_to "START OVER", outcomes_reset_path, remote: true, method: :put, class: "start_over" %>
+</div>
+
 <div class="border hidden">
   <div class="outcome hidden">
     <%= render "outcomes/outcome_details" %>

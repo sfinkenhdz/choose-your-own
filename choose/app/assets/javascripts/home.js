@@ -5,8 +5,7 @@ $(document).ready(function(){
     $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
     $('div:hidden').toggle('slow');
     $('.header').css('display', 'none');
-    $(button).val("START OVER");
-    $(button).removeClass('start_button').addClass('start_over');
+    $('.start_button').css('display', 'none');
     $.ajax({
         method: "put",
         url: "/outcomes/reset"
@@ -16,7 +15,7 @@ $(document).ready(function(){
       })
     });
 
-  $('start_over').on('click', function(event){
+  $('.start_over').on('click', function(event){
     event.preventDefault();
     $.ajax({
         method: "put",
