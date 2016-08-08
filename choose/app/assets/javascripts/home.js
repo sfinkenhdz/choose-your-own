@@ -3,8 +3,8 @@ $(document).ready(function(){
     event.preventDefault();
     var button = $(this);
     $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
-    $('div:hidden').removeClass('hidden');
-    $('.header').hide('slow');
+    $('div:hidden').toggle('slow');
+    $('.header').css('display', 'none');
     $(button).val("Start Over");
     $(button).removeClass('start_button').addClass('start_over');
     $.ajax({
