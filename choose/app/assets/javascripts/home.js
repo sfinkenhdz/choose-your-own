@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
     $('div:hidden').toggle('slow');
     $('.header').css('display', 'none');
-    $(button).val("Start Over");
+    $(button).val("START OVER");
     $(button).removeClass('start_button').addClass('start_over');
     $.ajax({
         method: "put",

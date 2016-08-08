@@ -29,9 +29,12 @@ html {
   box-sizing: inherit;
   }
 
+body {
+  margin: 0;
+}
+
 .main-container {
     background-image: url('brain2.jpg');
-
     background-size: cover;
     background-position: 50% 50%;
     position: fixed;
