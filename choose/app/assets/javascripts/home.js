@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  $('.start').on('click', function(event){
+  $('.start_button').on('click', function(event){
     event.preventDefault();
     var button = $(this);
     $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
     $('div:hidden').removeClass('hidden');
     $('.header').hide('slow');
-    $(button).text("Start Over");
-    $(button).removeClass('start').addClass('start_over');
+    $(button).val("Start Over");
+    $(button).removeClass('start_button').addClass('start_over');
     $.ajax({
         method: "put",
         url: "/outcomes/reset"
