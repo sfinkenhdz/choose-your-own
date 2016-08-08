@@ -18,15 +18,15 @@ The few remaining pockets of survivors near us have clustered into a handful of 
 Here's what we know about the groups:
 GROUP 1: has decided to tackle to the Dalek threat head on. They are very smart, and very full of themselves. They are developing weapons and traps that exploit the few Dalek weaknesses to create a full system of attack. They are having success, but there is a lot of competition and in-fighting.
 
-GROUP 2: is thinking about protection from the Daleks, extreme weather, and other threats. They are very creative, and have created a wide variety of shelter out of anything they can find. It works, but quality varies greatly. So far they have found enough food in the ruins to survive, but this will soon run out and they realize this.
+GROUP 2: is thinking about protection from the Daleks, extreme weather, and other threats. They are very creative, and have built a wide variety of shelter out of anything they can find. It works, but quality varies greatly. So far they have found enough food in the ruins to survive, but this will soon run out and they realize this.
 
 GROUP 3: appears to be doing, well, not much of anything. They are camped out by a river and don't seem to have much of a plan. The land near the river grows various berry bushes and other edible plants. The group seems to be doing all right for now, and don't seem too interested in a longer-term plan.
 
 GROUP 4: has food figured out. They scavenged food from the wreckage, but rather than eating all of it directly, they have been using it primarily as bait to lure various types of small game. (Who knew squirrels had such a love of Skittles and SweetTarts?) They have also explored a much larger area than the other groups and have found various clusters of other edibles that can be foraged. They're cautious, but welcoming.
 
 Now, for our first decision: Shall we make a plan, or start by visiting the group closest to us?\n", visited?: 0 },
-  { name: 'Choose: easy/hard', text: "Should we start with the easiest group to persuade, or most difficult?\n", visited?: 0, causing_choice_id: 1 },
-  { name: 'Go to defense group', text: "We visit the group that is developing a system to attack the Daleks. They have decent shelter, and a moderate food supply. They recognize that both of these needs could be better met.
+  { name: 'Choose: easy/hard', text: "Should we start with the easiest group to persuade, or most difficult?", visited?: 0, causing_choice_id: 1 },
+  { name: 'Go to defense group', text: "We visit the group that is developing a system to attack the Daleks. They have decent shelter and a moderate food supply. They recognize that both of these needs could be better met.
 
 This is a tough group because they are pretty egotistical. Everyone thinks their ideas are the best.
 
@@ -79,9 +79,9 @@ The builders are overjoyed.
 
 'Wait. What if they receive an Ajax request?' you ask.
 
-'We don't even have views,' I reply. 'Let's not get carried away with this metaphor.'
+'We don't even have views,' I reply. 'Let's not get too carried away with this metaphor.'
 
-Now, on to our next group.\n", visited?: 0 },
+Now, on to our next group.", visited?: 0 },
   { name: "Stupid choice", text: "Seriously?\n", visited?: 0 },
   { name: "Gain trust" , text: "'Well, you know what I always say--Be helpful.'
 
@@ -95,16 +95,20 @@ When we arrive, the group leaders are impressed by our helpfulness.
 
 This group is very organized, detail-oriented and good at developing systems, so they also appreciate that we thought to consider the variety of wood that would be needed.
 
-This small choice helps us gain trust immediately.\n", visited?: 0 },
-  { name: "Skepticism", text: "Group leaders are a little skeptical that we have come to them asking for cooperation after having just decided to not help with a simple task.
+This small choice helps us gain trust immediately, and we have another group on board to save the world with us.
+
+Our final group to visit is the lazy group.
+
+Should we visit them, or skip it?", visited?: 0 },
+  { name: "Skepticism", text: "Whe we arrive, group leaders are a little skeptical that we have come to them asking for cooperation after having just decided to not help with a simple task.
 
 We are going to have to gain their trust.
 
 They give us the choice of doing trust falls or manual labor.\n", visited?: 0 },
   { name: "Gain trust of food group 2" , text: "For whatever reason, this act has been enough to gain the trust of the group. They now feel that we have proven our worth and sincerity. They agree to cooperate.
 
-Now, we will travel to our final group.\n", visited?: 0 },
-  { name: "Yes, we do.", text: "Most people have something to contribute. It's just a matter of figuring out what it is, and how to motivate them. I'm sure we can xxx.\n" , visited?: 0 },
+Now, we will travel to our final group.", visited?: 0 },
+  { name: "Yes, we do.", visited?: 0 },
   { name: "Leave", text: "As we are about to leave, you ask, 'Isn't this the group described as being lazy? Strange that the lazy people would travel this far away just to sit around and do nothing.'
 
 'That is strange,' I reply.
@@ -113,12 +117,12 @@ Now, we will travel to our final group.\n", visited?: 0 },
 
 We don't want to look stupid in front of our new allies, especially now that we are so close to succeeding. However, you've made an excellent point and we don't actually know that much.
 
-Should we admit we don't know, or pretend we have all the details to save face in front of our new friends?\n", visited?: 0 },
+Should we admit we don't know, or pretend we have all the details to save face in front of our new friends?", visited?: 0 },
   { name: "No one there", text: "Unfortuntely, when we arrive at the stretch of river where the loafers are supposed to be loafing, no one is there. No sign of any humans.
 
 We look around and eventually find a fishing pole and bucket. There are people around after all. We sit down to discuss our options, and soon after a mother and child appear, looking for the fishing gear.
 
-Should we ask for help, or keep pretending we know what we are doing?\n", visited?: 0 },
+Should we ask for help, or keep pretending we know what we are doing?", visited?: 0 },
   { name: "Admit we don't know", text: "'Why exactly is that the lazy group?' I ask.
 
 'I dunno,' the person replies.
@@ -131,10 +135,10 @@ And Dr. Who jumps into the TARDIS and leaves.
 
 'Well, that was a helpful tip about the caves,' I say. 'I'm glad we asked. I haven't always liked asking for help, but it sure comes in handy sometimes.'
 
-Should we go to the caves or the river?\n", visited?: 0 },
-  { name: "Arrive at final group", text: "When we arrive at the caves, members of the group are happy to show us around. It quickly becomes evident that the so-called lazy group is anything but.
+Should we go to the caves or the river?", visited?: 0 },
+  { name: "Arrive at final group", text: "We arrive at the caves, and find the group we are looking for. They are happy to show us around. It quickly becomes evident that the so-called lazy group is anything but.
 
-As they show us around and explain what they've been up to, it becomes clear that this group is actually an excellent team. They have been working hard, communicating consistently, and took the time to assess what they needed, resources available, and each person's strengths and weaknesses. Because they have been working so well together, they haven't appeared quite as stressed out as the other groups, and have even been having some fun.
+As they explain what they've been up to, it becomes clear that this group is actually an excellent team. They have been working hard, communicating consistently, and took the time to assess what they needed, resources available, and each person's strengths and weaknesses. Because they have been working so well together, they haven't appeared quite as stressed out as the other groups, and have even been having some fun.
 
 By consistently exploring, experimenting and communicating they have been able to figure out how to best use the benefits of the cave and river to meet their needs. And, they realize that saving the world isn't easy, so they need to have some fun, too.
 
@@ -142,8 +146,8 @@ They have been considering reaching out to other groups, so are happy to join ou
 
 Now, that we have done our part, Dr. Who returns. With a lot of cooperation and a sonic screwdriver, the world is rid of the Daleks!
 
-How should we celebrate?\n", visited?: 0 },
-  { name: "Still pretending", text: "'Hello there,' the woman greets us. 'You look lost.  Need any help?'\n", visited?: 0 },
+How should we celebrate?", visited?: 0 },
+  { name: "Still pretending", text: "'Hello there,' the woman greets us. 'You look lost.  Need any help?'", visited?: 0 },
   { name: "No help", text: "We confidently stride back from where we came. The woman looks at us strangely and walks away.
 
 It's starting to get dark now, and we still don't know where we are going. Maybe we should look for a place to spend the night. Maybe we should go back where we came from.
@@ -152,18 +156,20 @@ Just then, a man comes walking towards us, hurrying towards the river.
 
 Should we ask for directions, or keep faking it?
 
-Okay, this is getting silly.\n", visited?: 0 },
+Okay, this is getting silly.", visited?: 0 },
   { name: "To the caves!", visited?: 0 } ])
 
 choices = Choice.create([
-  {name: 'Plan', text: "Great choice!  I typically like to have a plan and goals.
+  {name: 'Plan', text: "Great choice!  I typically like to have a plan and goals, but I'm also pretty adaptable. I'm sure some unexpected situations will come up on our adventure, and I'm ready to figure those out, too.
 
   How should we prioritize which group to start with?", resulting_outcome_id: 2, previous_outcome_id: 1},
-  {name: 'Closest', text: "You know, I probably would have spent some time planning, but I appreciate your desire to get started. We'll need to talk to everyone, so let's go!\n", resulting_outcome_id: 3, previous_outcome_id: 1},
-  {name: 'Easiest', text: "I would have started with the most difficult group, because when solving a problem, I like to get a feel for the most challenging parts early on.
+  {name: 'Closest', text: "You know, I probably would have spent some time planning, but I appreciate your desire to get started. We'll need to talk to everyone, so let's go!", resulting_outcome_id: 3, previous_outcome_id: 1},
+  {name: 'Easiest', text: "In some situations, I like to start with the most difficult task, because when solving a problem, I like to get a feel for the most challenging parts early on. That way I have a better idea of what it will take and whether it is worth it.
 
-  There are also good reasons to get an ally on our side early. It's nice to have a concrete deliverable.And, since we're working together, both of our ideas are important. (it's important we collaborate)", resulting_outcome_id: 4, previous_outcome_id: 2},
-  {name: 'Hardest', text: "This is what I would have chosen, too. When solving a problem, I like to get a feel for the most challenging parts early on.", resulting_outcome_id: 3, previous_outcome_id: 2},
+  But, there are also good reasons to start with a more easily attainable goal. It's nice to have a concrete accomplishment or deliverable early on, and that could help us with the other groups.
+
+  Off we go!", resulting_outcome_id: 4, previous_outcome_id: 2},
+  {name: 'Hardest', text: "Usually when solving a problem, I like to get a feel for the most challenging parts early on, so this seems like a good place to start.", resulting_outcome_id: 3, previous_outcome_id: 2},
   {name: 'They are great!', text: "Like so many of us, this group responds really well to positive reinforcement. And, our praise is sincere; they really have done exceptional work. (There's nothing worse than false praise!) Making the temperamental members of this group feel good about themselves let them feel more comfortable admitting they need help from the others.
 
     Success!", resulting_outcome_id: 4, alt_resulting_outcome_id: 6, previous_outcome_id: 3},
