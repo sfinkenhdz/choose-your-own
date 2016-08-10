@@ -1,7 +1,6 @@
 class ChoicesController < ActionController::Base
 
   def show
-    # Article.includes(:category, :comments)
     @choice = Choice.find(params[:id])
     @choice.previous_outcome.increment!(:visited?)
     @result = @choice.set_result

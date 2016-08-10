@@ -4,8 +4,9 @@ $(document).ready(function(){
     var button = $(this);
     $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
     $('div:hidden').toggle('slow');
-    $('.header').css('display', 'none');
-    $('.start_button').css('display', 'none');
+    $('header').css('display', 'none');
+    $('.start_adventure').css('display', 'none');
+
     $.ajax({
         method: "put",
         url: "/outcomes/reset"

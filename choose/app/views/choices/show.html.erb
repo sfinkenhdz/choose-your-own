@@ -1,3 +1,5 @@
-  <div><%= @choice.text %></div>
-  <br>
+  <% if @choice.text != nil %>
+    <div><%= @choice.text %></div>
+    <br>
+  <% end %>
   <div><%= render "outcomes/outcome_details" %></div>

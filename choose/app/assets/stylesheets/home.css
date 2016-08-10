@@ -8,12 +8,12 @@
 }
 
 .border {
-  border: 3px solid white;
+  border: 2px solid white;
   position: absolute;
   margin: auto;
   top: -100px; left: 0; bottom: 0; right: 0;
-  width: 60%;
-  height: 50%;
+  width: 70%;
+  height: 60%;
   overflow-y: auto;
   display: inline-block;
   background-color: gray;
@@ -39,31 +39,32 @@
   display: none;
 }
 
-.header {
+header {
   width: 100%;
   font-family: Verdana;
 }
 
 .welcome {
   text-align: center;
-  margin-bottom: 8px;
   background-color: #4d4d4d;
   font-size: 20px;
-  padding: 15px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 8px;
 }
 
 .learn {
-  width: 50%;
-  background-color: white;
-  opacity: .8;
-  margin: 8px;
+  width: 45%;
+  background-color: #888888;
+  margin: auto;
   padding: 8px;
   font-size: 16px;
+  border: 1px solid black;
 }
 
 .start_button {
   font-weight: bold;
-  background-color: #4d4d4d;
+  background-color: #CC9933;
   border: 1px solid black;
   color: white;
   border-radius: 25px;
@@ -77,8 +78,9 @@
   border-radius: 25px;
 }
 
-.start {
-  margin-left: 20px;
+.start_adventure {
+  width: 45%;
+  margin: auto;
 }
 
 
