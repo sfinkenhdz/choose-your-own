@@ -1,22 +1,87 @@
-.resume {
-  display: inline-block;
-  width: 30%;
-}
-
-.adventure {
-  display: inline-block;
-  width: 30%;
-}
-
 
 .outcome {
+  position: relative;
+  padding: 10px;
+  color: navy;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.border {
+  border: 2px solid white;
+  position: absolute;
+  margin: auto;
+  top: -100px; left: 0; bottom: 0; right: 0;
+  width: 70%;
+  height: 60%;
+  overflow-y: auto;
   display: inline-block;
-  background-color: red;
+  background-color: gray;
+  opacity: .8;
+  padding: 5px;
+}
+
+.button_to {
+  display: inline-block;
+  margin: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.choice {
+  background-color: #4d4d4d;
+  border: 1px solid black;
+  color: white;
+  border-radius: 25px;
 }
 
 .hidden {
   display: none;
-  background-color: blue;
 }
+
+header {
+  width: 100%;
+  font-family: Verdana;
+}
+
+.welcome {
+  text-align: center;
+  background-color: #4d4d4d;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.learn {
+  width: 45%;
+  background-color: #888888;
+  margin: auto;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+.start_button {
+  font-weight: bold;
+  background-color: #CC9933;
+  border: 1px solid black;
+  color: white;
+  border-radius: 25px;
+  }
+
+.start_over {
+  font-weight: bold;
+  background-color: #4d4d4d;
+  border: 1px solid black;
+  color: white;
+  border-radius: 25px;
+}
+
+.start_adventure {
+  width: 45%;
+  margin: auto;
+}
+
 
 

@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(version: 20160726221116) do
     t.string   "name"
     t.text     "text"
     t.integer  "resulting_outcome_id"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.integer  "alt_resulting_outcome_id"
+    t.integer  "previous_outcome_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "next_options", force: :cascade do |t|
@@ -34,16 +36,10 @@ ActiveRecord::Schema.define(version: 20160726221116) do
   create_table "outcomes", force: :cascade do |t|
     t.string   "name"
     t.text     "text"
+    t.integer  "visited?"
     t.integer  "causing_choice_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-  end
-
-  create_table "pre_choices", force: :cascade do |t|
-    t.integer  "outcome_id"
-    t.integer  "choice_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

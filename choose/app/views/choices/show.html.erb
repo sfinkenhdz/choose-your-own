@@ -1,15 +1,5 @@
-<div class="outcome">
-  <div>
-  <%= @choice.text %>
-  </div>
-
-  <div class="outcome hidden">
-  <%= @choice.resulting_outcome.text %>
-  </div>
-
-  <div>
-    <% @choice.resulting_outcome.next_choices.each do |choice| %>
-        <%= button_to choice.name, choice, remote: true, method: :get, class: "choice" %>
-      <% end %>
-  </div>
-</div>
+  <% if @choice.text != nil %>
+    <div><%= @choice.text %></div>
+    <br>
+  <% end %>
+  <div><%= render "outcomes/outcome_details" %></div>

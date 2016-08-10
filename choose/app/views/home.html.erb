@@ -1,25 +1,29 @@
 <div class="main-container"></div>
 
-<div>Welcome to Sarah Finken-Hernandez's Site </div>
+<header>
+  <div class="welcome">Welcome to Sarah Finken-Hernandez's Site </div>
 
-<div>I'm guessing you're here because you'd like to learn more about me. There are lots of ways to do that. Would you like to look at my resume, or go on an adventure? </div>
+  <div class="learn">
+  I'm guessing you're here because you'd like to learn more about me. There are lots of ways to do that. Sure, you could look at my resume or something, but wouldn't it be more fun to go on an adventure?
+  </div>
+</header>
 
-<div>
-  <button class="resume">RESUME</button>
-  <button class="adventure">ADVENTURE</button>
+<div class="start_adventure">
+  <%= button_to "START ADVENTURE", outcomes_reset_path, remote: true, method: :put, class: "start_button" %>
 </div>
 
-<div class="outcome hidden">
-  <%= @outcomes[0].text %>
-  <div>
-    <% @outcomes[0].next_choices.each do |choice| %>
-      <%= button_to choice.name, choice, remote: true, method: :get, class: "choice" %>
-    <% end %>
+<div class="start hidden">
+  <%= button_to "START OVER", outcomes_reset_path, remote: true, method: :put, class: "start_over" %>
+</div>
+
+<div class="border hidden">
+  <div class="outcome hidden">
+    <%= render "outcomes/outcome_details" %>
   </div>
 </div>
 
 
-<!-- <div class="next"></div> -->
+
 
 
 

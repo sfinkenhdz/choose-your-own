@@ -1,14 +1,33 @@
 $(document).ready(function(){
-  $('.adventure').on('click', function(event){
+  $('.start_button').on('click', function(event){
     event.preventDefault();
-    $('.main-container').css('background-image', 'url(/assets/fire_river.jpg)');
-    $('.adventure').slideToggle();
-    $('.resume').slideToggle();
-    $('div:hidden').show();
+    var button = $(this);
+    $('.main-container').css('background-image', 'url(/assets/dalek.jpg)');
+    $('div:hidden').toggle('slow');
+    $('header').css('display', 'none');
+    $('.start_adventure').css('display', 'none');
+
+    $.ajax({
+        method: "put",
+        url: "/outcomes/reset"
+      })
+      .done(function(response){
+        $(".outcome").html(response);
+      })
+    });
+
+  $('.start_over').on('click', function(event){
+    event.preventDefault();
+    $.ajax({
+        method: "put",
+        url: "/outcomes/reset"
+      })
+      .done(function(response){
+        $(".outcome").html(response);
+      })
   });
 
   $('.outcome').on('click', '.button_to', function(event){
-    console.log("hi");
       event.preventDefault();
       var url = $(this).attr("action");
       var method = $(this).attr("method");
@@ -17,13 +36,9 @@ $(document).ready(function(){
         url: url
       })
      .done(function(response){
-      $('div:hidden').show();
       $(".outcome").html(response);
      })
-
    });
-
-
 });
 
 

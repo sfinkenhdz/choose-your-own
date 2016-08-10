@@ -4,6 +4,8 @@ class CreateChoices < ActiveRecord::Migration
       t.string  :name
       t.text    :text
       t.integer :resulting_outcome_id
+      t.integer :alt_resulting_outcome_id
+      t.integer :previous_outcome_id
 
       t.timestamps null: false
     end
