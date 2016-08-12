@@ -33,6 +33,7 @@
   border: 1px solid black;
   color: white;
   border-radius: 25px;
+  font-size: 12px;
 }
 
 .hidden {
@@ -68,6 +69,7 @@ header {
   border: 1px solid black;
   color: white;
   border-radius: 25px;
+  font-size: 12px;
   }
 
 .start_over {
@@ -76,6 +78,7 @@ header {
   border: 1px solid black;
   color: white;
   border-radius: 25px;
+  font-size: 12px;
 }
 
 .start_adventure {
