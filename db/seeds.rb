@@ -2,11 +2,15 @@
 outcomes = Outcome.create([
   { name: 'Setup', text: "As do many great adventures, this one begins with the near destruction of Earth. The planet has been devastated by a massive meteor shower.
 
+    In addition to the immediate damage, the meteors have also caused fires, floods, earthquakes, hurricanes and other natural disasters.
+
+    Cities lie in ruins, and only small handfuls of people have survived.
+
     To make matters even worse, the Daleks see this moment of vulnerability as the perfect opportunity to wipe out what remains of the human race.
 
 Dr. Who has called us in to help save the world.", visited?: 0 },
   { name: 'Choose: easy/hard', text: "Should we start with the easiest group to persuade, or most difficult?", visited?: 0 },
-  { name: 'Go to fighers', text: "We head towards the settlement of the Fighers.
+  { name: 'Go to destroyers', text: "We head towards the settlement of the Destroyers.
 
 This is a tough group because they are pretty egotistical. Everyone thinks their ideas are the best.
 
@@ -157,11 +161,13 @@ Okay, this is getting silly.", visited?: 0 },
 
   2. His archnemeses are the Daleks. They are deadly and pure evil.
 
-  3. You should really do yourself a favor and start watching Dr. Who.", visited?: 0},
+  3. You should really do yourself a favor and start watching Dr. Who.
+
+    Now, let's learn more about our mission.", visited?: 0},
   {name: "Details", text: "The survivors near us have clustered into four groups. Our mission is to convince all groups to work together.
 
 Here's what we know:
-The FIGHTERS are very smart, but very full of themselves. They are developing weapons and having success, but there is a lot of competition and in-fighting.
+The DESTROYERS are very smart, but very full of themselves. They are developing weapons and having success, but there is a lot of competition and in-fighting.
 
 The BUILDERS are creative, and have built a wide variety of shelter out of anything they can find. It works, but quality varies greatly.
 
@@ -188,17 +194,20 @@ Now, we just need to ask for their cooperation.
 
     Like coding, there is more than one 'right answer'. Some may take longer, some may be more clear or elegant, but one way or another, you have achived a working solution.
 
-    To learn more about me, or to start planning our next adventure, contact me at: sarah.finken@gmail.com or 773-726-9405.", visited?: 0}
+    This has been a great start to getting to know each other, but it is of course only a beginning. To learn more about me, or to start planning our next adventure, contact me at: sarah.finken@gmail.com or 773-726-9405.", visited?: 0},
+    {name: 'Continue', visited?: 0}
 ])
 
 choices = Choice.create([
   {name: 'Plan', text: "Great choice!  I typically like to have a plan and goals, but I'm also pretty adaptable. I'm sure some unexpected situations will come up on our adventure, and I'm ready to figure those out, too.
 
   How should we prioritize which group to start with?", resulting_outcome_id: 2, previous_outcome_id: 1},
-  {name: 'Closest', text: "You know, I probably would have spent some time planning, but I appreciate your desire to get started. We'll need to talk to everyone, so let's go!", resulting_outcome_id: 24, previous_outcome_id: 1},
+  {name: 'Closest', text: "I probably would have spent some time planning, but I appreciate your desire to get started. I like to have a plan when possible, but I'm also pretty adaptable.
+
+    We'll need to talk to everyone, so let's go!", resulting_outcome_id: 24, previous_outcome_id: 1},
   {name: 'Easiest', text: "It's great to have a concrete accomplishment or deliverable early on, and that could help us with the other groups.
 
-    Off we go!", resulting_outcome_id: 4, previous_outcome_id: 2},
+    Off we go!", resulting_outcome_id: 29, previous_outcome_id: 2},
   {name: 'Hardest', text: "Usually when solving a problem, I like to get a feel for the most challenging parts early on, so this seems like a good plan to me.", resulting_outcome_id: 24, previous_outcome_id: 2},
   {name: 'They are great!', text: "Like so many of us, this group responds well to positive reinforcement. And, our praise is sincere; they really have done exceptional work. They agree to join us.
 
@@ -222,7 +231,7 @@ choices = Choice.create([
   {name: "No, we don't", resulting_outcome_id: 16, previous_outcome_id: 14},
   {name: 'Ask for help', text: "'Excuse me!' I call out. 'We heard there was a group of people down here by the river.'
 
-  'Oh yes,' she replies. 'We spend part of the day here, but we are back at the caves now. Come with me.'", resulting_outcome_id: 17, previous_outcome_id: 15},
+    'Oh yes,' she replies. 'We spend part of the day here, but we are back at the caves now. Come with me.'", resulting_outcome_id: 17, previous_outcome_id: 15},
   {name: "On to the next group", resulting_outcome_id: 3, alt_resulting_outcome_id: 6, previous_outcome_id: 8},
   {name: 'Keep pretending',resulting_outcome_id: 18, previous_outcome_id: 15},
   {name: 'Yes', text: "'Yes, thanks! We're looking for a group of people living down here by the river.'
@@ -259,7 +268,8 @@ choices = Choice.create([
    {name: "Wait", previous_outcome_id: 3, resulting_outcome_id: 27},
    {name: "Proceed", previous_outcome_id: 3, resulting_outcome_id: 26},
     {name: "Back to the mission!", previous_outcome_id: 27, resulting_outcome_id: 26},
-    {name: "How close did I come?", previous_outcome_id: 7, resulting_outcome_id: 28}
+    {name: "How close did I come?", previous_outcome_id: 7, resulting_outcome_id: 28},
+    {name: "Continue", previous_outcome_id: 29, resulting_outcome_id: 4}
   ])
 
 NextOption.create(outcome_id: 1, choice_id: 31)
@@ -307,6 +317,8 @@ NextOption.create(outcome_id: 26, choice_id: 5)
 NextOption.create(outcome_id: 26, choice_id: 6)
 NextOption.create(outcome_id: 27, choice_id: 39)
 NextOption.create(outcome_id: 7, choice_id: 40)
+NextOption.create(outcome_id: 29, choice_id: 41)
+
 
 
 
