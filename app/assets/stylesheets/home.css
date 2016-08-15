@@ -56,13 +56,17 @@ header {
 }
 
 .learn {
-  width: 45%;
+  width: 60%;
   background-color: #888888;
   margin: auto;
-  padding: 8px;
-  font-size: 16px;
+/*  padding: 2px;
+*/  font-size: 16px;
   border: 1px solid black;
   color: white;
+}
+
+.learn p {
+  padding: 2px 10px 2px 10px;
 }
 
 .start_button {
@@ -84,7 +88,7 @@ header {
 }
 
 .start_adventure {
-  width: 45%;
+  width: 60%;
   margin: auto;
 }
 
