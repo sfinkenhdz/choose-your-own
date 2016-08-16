@@ -10,7 +10,7 @@ outcomes = Outcome.create([
 
 Dr. Who has called us in to help save the world.", visited?: 0 },
   { name: 'Choose: easy/hard', text: "Should we start with the easiest group to persuade, or most difficult?", visited?: 0 },
-  { name: 'Go to destroyers', text: "We head towards the settlement of the Destroyers.
+  { name: 'Go to Destroyers', text: "We head towards the settlement of the Destroyers.
 
 This is a tough group because they are pretty egotistical. Everyone thinks their ideas are the best.
 
@@ -23,7 +23,7 @@ It's true, an algorithmic program backed by databases of information about the w
 Unfortunately, our devastated world's current resources don't include electricity or iPhones.
 
 Should we wait for civilization to advance, or proceed with our mission?", visited?: 0 },
-  { name: 'Go to builders', text: "After a short walk, we arrive at a patchwork of makeshift homes. All provide basic protection, but a lack of long-term planning is evident.
+  { name: 'Go to Builders', text: "After a short walk, we arrive at a patchwork of makeshift homes. All provide basic protection, but a lack of long-term planning is evident.
 
     They either wander around looking for what they need for what they are working on, or just use anything nearby. A more organized system would really improve quality and efficiency.
 
@@ -31,11 +31,11 @@ Should we wait for civilization to advance, or proceed with our mission?", visit
 
     So, we have an easy decision to make.  Should we invite them to join us in the great re-building of humanity, or should we throw rocks at them?", visited?: 0 },
   { name: 'Choose: leave/apologize', text: "Should we go, or apologize?", visited?: 0 },
-  { name: 'Go to chompers', visited?: 0, text: "Next, we go visit the Chompers.
+  { name: 'Go to Chompers', visited?: 0, text: "Next, we go visit the Chompers.
 
-    As we near the group, we pass a chomper child gathering firewood to bring back. Should we stop to help?" },
+    As we near the group, we pass a Chomper child gathering firewood to bring back. Should we stop to help?" },
   { name: "Conclusion", text: "Now, amidst all of the hugging, hand-shaking, back-slapping, joyful crying and general congratulatory revelrie, you may also be wondering, how close did I come to making the wrong choice and ending humanity's last hope? What did I miss by making the choices that I made?", visited?: 0 },
-  { name: 'Success with builders', text: "Not surprisingly, this hungry, collaborative group is happy to join us.
+  { name: 'Success with Builders', text: "Not surprisingly, this hungry, collaborative group is happy to join us.
 
 Before we leave we decide to help with their haphazard process.
 
@@ -47,7 +47,7 @@ Before we leave we decide to help with their haphazard process.
 
 We suggest the center of their settlement as something of a router, where building requests are directed. From there, we create different paths, depending upon whether people need materials to build roofs, walls, floors or fences and then whether they will be creating, updating or destroying that part of the dwelling.
 
-The builders are overjoyed.
+The Builders are overjoyed.
 
 'Wait. What if they receive an Ajax request?' you ask.
 
@@ -67,27 +67,13 @@ When we arrive, the group leaders are impressed by our helpfulness.They also app
 
 These small choices helps us gain trust quickly, and we have another group on board to save the world with us.
 
-However, like the other groups, the Chompers have a problem and they'd like our help to solve it.
-
-The Chompers are re-discovering agriculture. They have found edible plants growing naturally and have planted some additional ones. They have various ideas for improving productivity of the plants, but since none of them are actual farmers, they are concerned about experimenting too much and ruining their crop.
-
-'Sounds like a source control problem to me,' I say.
-
-'A what now?' a nearby Chomper asks.
-
-We help them segment off small numbers of their plants to create different branches that they can experiment on. They can merge a branch back into their master crop when they are sure that it is an improvement they want to keep, and is free of bugs.
-
-We continue to impress and amaze.
-
-Now, we are down to our final group: the Slackers. They are pretty far away, down by the river.
-
-Should we visit them, or skip it?", visited?: 0 },
+However, like the other groups, the Chompers have a problem and they'd like our help to solve it.", visited?: 0 },
   { name: "Skepticism", text: "Whe we arrive, group leaders are a little skeptical that we have come to them asking for cooperation after having just decided to not help with a simple task.
 
 We are going to have to gain their trust.
 
 They give us the choice of doing trust falls or manual labor.", visited?: 0 },
-  { name: "Gain trust of chompers 2" , text: "For whatever reason, this act has been enough to gain the trust of the group. They feel that we have proven our sincerity, and agree to cooperate.
+  { name: "Gain trust of Chompers 2" , text: "For whatever reason, this act has been enough to gain the trust of the group. They feel that we have proven our sincerity, and agree to cooperate.
 
 However, like the other groups, the Chompers have a problem and they'd like our help to solve it.
 
@@ -195,7 +181,20 @@ Now, we just need to ask for their cooperation.
     Like coding, there is more than one 'right answer'. Some may take longer, some may be more clear or elegant, but one way or another, you have achived a working solution.
 
     This has been a great start to getting to know each other, but it is of course only a beginning. To learn more about me, or to start planning our next adventure, contact me at: sarah.finken@gmail.com or 773-726-9405.", visited?: 0},
-    {name: 'Continue', visited?: 0}
+    {name: 'Continue', visited?: 0},
+    {name: 'Continue', text: "The Chompers are re-discovering agriculture. They have found edible plants growing naturally and have planted some additional ones. They have various ideas for improving productivity of the plants, but since none of them are actual farmers, they are concerned about experimenting too much and ruining their crop.
+
+'Sounds like a source control problem to me,' I say.
+
+'A what now?' a nearby Chomper asks.
+
+We help them segment off small numbers of their plants to create different branches that they can experiment on. They can merge a branch back into their master crop when they are sure that it is an improvement they want to keep, and is free of bugs.
+
+We continue to impress and amaze.
+
+Now, we are down to our final group: the Slackers. They are pretty far away, down by the river.
+
+Should we visit them, or skip it?", visited?: 0}
 ])
 
 choices = Choice.create([
@@ -269,7 +268,8 @@ choices = Choice.create([
    {name: "Proceed", previous_outcome_id: 3, resulting_outcome_id: 26},
     {name: "Back to the mission!", previous_outcome_id: 27, resulting_outcome_id: 26},
     {name: "How close did I come?", previous_outcome_id: 7, resulting_outcome_id: 28},
-    {name: "Continue", previous_outcome_id: 29, resulting_outcome_id: 4}
+    {name: "Continue", previous_outcome_id: 29, resulting_outcome_id: 4},
+    {name: "Continue", previous_outcome_id: 10, resulting_outcome_id: 30}
   ])
 
 NextOption.create(outcome_id: 1, choice_id: 31)
@@ -286,8 +286,8 @@ NextOption.create(outcome_id: 6, choice_id: 11)
 NextOption.create(outcome_id: 6, choice_id: 12)
 NextOption.create(outcome_id: 8, choice_id: 20)
 NextOption.create(outcome_id: 9, choice_id: 10)
-NextOption.create(outcome_id: 10, choice_id: 15)
-NextOption.create(outcome_id: 10, choice_id: 16)
+NextOption.create(outcome_id: 10, choice_id: 42)
+# NextOption.create(outcome_id: 10, choice_id: 16)
 NextOption.create(outcome_id: 11, choice_id: 13)
 NextOption.create(outcome_id: 11, choice_id: 14)
 NextOption.create(outcome_id: 12, choice_id: 15)
@@ -318,6 +318,10 @@ NextOption.create(outcome_id: 26, choice_id: 6)
 NextOption.create(outcome_id: 27, choice_id: 39)
 NextOption.create(outcome_id: 7, choice_id: 40)
 NextOption.create(outcome_id: 29, choice_id: 41)
+NextOption.create(outcome_id: 30, choice_id: 15)
+NextOption.create(outcome_id: 30, choice_id: 16)
+
+
 
 
 
